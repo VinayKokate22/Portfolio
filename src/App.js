@@ -1,24 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useEffect, useState } from "react";
+import { useRef } from "react";
+import "./App.css";
+import "./components/style.css";
+import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+import Section1 from "./components/Section1";
+import Section2 from "./components/Section2";
+import Section3 from "./components/Section3";
+import Section4 from "./components/Section4";
 function App() {
+  const containerRef = useRef(null);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (event) => {
+    setPosition({ x: event.clientX, y: event.clientY });
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LocomotiveScrollProvider
+      options={{
+        smooth: true,
+        // ... all available Locomotive Scroll instance options
+      }}
+      watch={
+        [
+          //..all the dependencies you want to watch to update the scroll.
+          //  Basicaly, you would want to watch page/location changes
+          //  For exemple, on Next.js you would want to watch properties like `router.asPath` (you may want to add more criterias if the instance should be update on locations with query parameters)
+        ]
+      }
+      containerRef={containerRef}
+    >
+      <div data-scroll-container ref={containerRef}>
+        <div
+          className="cursor"
+          style={{
+            left: position.x,
+            top: position.y,
+          }}
+        ></div>
+
+        <Section1 />
+        <Section2 />
+        <Section3 />
+        <Section4 />
+      </div>
+      ;
+    </LocomotiveScrollProvider>
   );
 }
 

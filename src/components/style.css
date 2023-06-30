@@ -1,0 +1,73 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.navbar .nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 1.5rem 1.5rem;
+  background-color: rgba(254, 247, 238, 0.683);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+}
+
+.herosection {
+  display: flex;
+  width: 100%;
+  padding: 8rem 0;
+  justify-content: center;
+  background-color: rgba(254, 247, 238, 0.824);
+}
+.herosection .heroTitle {
+  width: 60%;
+  text-align: center;
+  line-height: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.herosection .heroTitle h1 {
+  font-size: 12rem;
+  font-weight: bold;
+}
+.herosection .heroTitle h2 {
+  font-size: 12rem;
+}
+
+.aboutcomponent {
+  margin: auto;
+}
+.aboutcomponent .aboutsection {
+  background-color: rgba(254, 247, 238, 0.824);
+}
+.aboutcomponent .aboutsection .infocomponent {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutcomponent .aboutsection h2 {
+  font-size: 5rem;
+  margin: 5rem 0;
+}
+.aboutcomponent .aboutsection p {
+  width: 50%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.Workssection {
+  background-color: rgba(254, 247, 238, 0.824);
+}
+.Workssection h2 {
+  text-align: center;
+  padding: 5rem 0;
+  margin: auto;
+  font-size: 7rem;
+}/*# sourceMappingURL=style.css.map */
