@@ -5,7 +5,9 @@
   box-sizing: border-box;
   font-family: "Clash Display", sans-serif;
 }
-
+html {
+  background-color: rgb(255, 249, 242);
+}
 html.has-scroll-smooth {
   overflow: hidden;
 }

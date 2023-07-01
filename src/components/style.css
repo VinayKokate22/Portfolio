@@ -1,6 +1,5 @@
 .navbar {
   position: sticky;
-  top: 0;
   z-index: 999;
 }
 .navbar .nav-list {
@@ -11,9 +10,8 @@
   font-weight: 600;
   font-size: 2rem;
   padding: 1.5rem 1.5rem;
-  background-color: rgba(254, 247, 238, 0.683);
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(120px);
+          backdrop-filter: blur(120px);
 }
 
 .herosection {
@@ -21,7 +19,19 @@
   width: 100%;
   padding: 8rem 0;
   justify-content: center;
-  background-color: rgba(254, 247, 238, 0.824);
+  position: relative;
+}
+.herosection p {
+  position: absolute;
+  font-size: 1.5rem;
+  color: rgb(130, 59, 84);
+  font-weight: 600;
+  left: 10rem;
+}
+.herosection span {
+  position: absolute;
+  bottom: 5rem;
+  right: 10rem;
 }
 .herosection .heroTitle {
   width: 60%;
@@ -35,15 +45,15 @@
   font-size: 12rem;
   font-weight: bold;
 }
+.herosection .heroTitle .animate-title {
+  transition: color 3s ease-in-out;
+}
 .herosection .heroTitle h2 {
   font-size: 12rem;
 }
 
 .aboutcomponent {
   margin: auto;
-}
-.aboutcomponent .aboutsection {
-  background-color: rgba(254, 247, 238, 0.824);
 }
 .aboutcomponent .aboutsection .infocomponent {
   width: 80%;
@@ -62,9 +72,6 @@
   font-size: 2rem;
 }
 
-.Workssection {
-  background-color: rgba(254, 247, 238, 0.824);
-}
 .Workssection h2 {
   text-align: center;
   padding: 5rem 0;

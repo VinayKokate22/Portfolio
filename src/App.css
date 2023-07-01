@@ -1,14 +1,13 @@
 .cursor {
-  position: absolute;
   width: 25rem;
   height: 20rem;
-
   pointer-events: none;
 
   /* left: 50%;
   top: 50%; */
-  z-index: 1;
+  /* z-index: 1; */
   translate: -50% -50%;
+
   background: linear-gradient(to left, rgb(255, 0, 123), rgb(255, 125, 64));
   animation: rotate 10s infinite;
   filter: blur(110px);
@@ -38,4 +37,45 @@
     scale: 0.9;
     border-radius: 40% 43% 56% 23%;
   }
+}
+.line {
+  height: 100vh;
+  width: 1px;
+  background: linear-gradient(to bottom, #4c4c4c91, #ffffff);
+  position: absolute;
+  top: 0;
+}
+
+.line:nth-child(1) {
+  left: 10%;
+}
+
+.line:nth-child(2) {
+  left: 20%;
+}
+
+.line:nth-child(3) {
+  left: 30%;
+}
+
+.line:nth-child(4) {
+  left: 40%;
+}
+
+.line:nth-child(5) {
+  left: 50%;
+}
+
+.line:nth-child(6) {
+  left: 60%;
+}
+
+.line:nth-child(7) {
+  left: 70%;
+}
+.line:nth-child(8) {
+  left: 80%;
+}
+.line:nth-child(9) {
+  left: 90%;
 }

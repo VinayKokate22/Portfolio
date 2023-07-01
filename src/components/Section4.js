@@ -2,7 +2,7 @@ import React from "react";
 
 const Section4 = () => {
   return (
-    <div className="pattern-vertical-lines-xl" data-scroll-section>
+    <div data-scroll-section>
       <div className="Workssection">
         <h2>
           Featured <br /> Works

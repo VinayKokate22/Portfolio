@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useSpring, animated } from "react-spring";
 import { useRef } from "react";
 import "./App.css";
 import "./components/style.css";
@@ -22,6 +23,7 @@ function App() {
       document.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+  const animatedPosition = useSpring({ to: position });
   return (
     <LocomotiveScrollProvider
       options={{
@@ -38,14 +40,24 @@ function App() {
       containerRef={containerRef}
     >
       <div data-scroll-container ref={containerRef}>
-        <div
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <animated.div
           className="cursor"
           style={{
-            left: position.x,
-            top: position.y,
-          }}
-        ></div>
+            position: "absolute",
 
+            top: animatedPosition.y,
+            left: animatedPosition.x,
+          }}
+        ></animated.div>
         <Section1 />
         <Section2 />
         <Section3 />
