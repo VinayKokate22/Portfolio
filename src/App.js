@@ -8,6 +8,8 @@ import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
 import Section4 from "./components/Section4";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
   const containerRef = useRef(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -17,6 +19,8 @@ function App() {
   };
 
   useEffect(() => {
+    AOS.init();
+    AOS.refresh();
     document.addEventListener("mousemove", handleMouseMove);
 
     return () => {

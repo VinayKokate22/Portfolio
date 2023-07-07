@@ -10,8 +10,6 @@
   font-weight: 600;
   font-size: 2rem;
   padding: 1.5rem 1.5rem;
-  -webkit-backdrop-filter: blur(120px);
-          backdrop-filter: blur(120px);
 }
 
 .herosection {
@@ -63,18 +61,76 @@
   align-items: center;
 }
 .aboutcomponent .aboutsection h2 {
-  font-size: 5rem;
-  margin: 5rem 0;
+  font-size: 3rem;
 }
 .aboutcomponent .aboutsection p {
   width: 50%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
-.Workssection h2 {
+.featureworkstitle {
   text-align: center;
   padding: 5rem 0;
   margin: auto;
   font-size: 7rem;
+}
+
+.Workssection {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 11rem;
+}
+.Workssection .singleproject {
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.Workssection .singleproject .singleprojectImage {
+  display: flex;
+  position: relative;
+  gap: 2rem;
+}
+.Workssection .singleproject b {
+  font-size: 2rem;
+}
+.Workssection .singleproject .imagerevelanimation {
+  width: 35rem;
+  height: 25rem;
+  background-color: #574b43;
+  z-index: 9999;
+  position: absolute;
+}
+.Workssection .singleproject .redirectarroranimation {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  width: 6rem;
+  z-index: 9999;
+  height: 6rem;
+  border-radius: 50%;
+  right: -2rem;
+  bottom: 3rem;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.146);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Workssection .singleproject img {
+  width: 35rem;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(0.9);
+  transition: 0.6s ease-in-out;
+}
+.Workssection .singleproject img:hover {
+  -webkit-filter: grayscale(0%);
+  cursor: pointer;
+}
+.Workssection .reverse {
+  justify-content: start;
+  flex-direction: row-reverse;
 }/*# sourceMappingURL=style.css.map */

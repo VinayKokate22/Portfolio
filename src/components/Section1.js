@@ -27,7 +27,7 @@ const Section1 = () => {
       <div>
         <ul className="nav-list">
           <li>logo</li>
-          <li>light</li>
+
           <li>menu</li>
         </ul>
       </div>

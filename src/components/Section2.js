@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from "react";
+import React, { useState } from "react";
 import { easeInOut, motion } from "framer-motion";
 import { gsap, Power3 } from "gsap";
 import { useEffect, useRef } from "react";
