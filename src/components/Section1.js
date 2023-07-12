@@ -12,10 +12,10 @@ const Section1 = () => {
     gsap.fromTo(
       boxRef.current,
       {
-        scale: 0,
+        opacity: 0,
       },
       {
-        scale: 1,
+        opacity: 1,
 
         ease: "power3.inOut",
 
