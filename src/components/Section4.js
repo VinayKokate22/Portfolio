@@ -243,7 +243,13 @@ const Section4 = () => {
               >
                 <NorthEastIcon style={{ fontSize: "3rem" }} />
               </motion.div>
-              <img onClick={navigate("works/Hemant")} id="tilt" src={img11} />
+              <img
+                onClick={() => {
+                  navigate("/works/Hemant");
+                }}
+                id="tilt"
+                src={img11}
+              />
             </motion.div>
           </div>
         </div>
