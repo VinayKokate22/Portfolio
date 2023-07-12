@@ -121,7 +121,7 @@
 }
 .Workssection .singleproject .imagerevelanimation {
   width: 38rem;
-  height: 27rem;
+  height: 28rem;
   background-color: #574b43;
   z-index: 9999;
   position: absolute;
@@ -142,14 +142,14 @@
 }
 .Workssection .singleproject img {
   width: 38rem;
-  height: 27rem;
+  height: 28rem;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: grayscale(0.9);
+  -webkit-filter: sepia(60%);
   transition: 0.6s ease-in-out;
 }
 .Workssection .singleproject img:hover {
-  -webkit-filter: grayscale(0%);
+  -webkit-filter: sepia(0%);
   cursor: pointer;
 }
 .Workssection .reverse {

@@ -4,7 +4,7 @@ import { cubicBezier } from "framer-motion";
 import { motion } from "framer-motion";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
 import { useNavigate } from "react-router-dom";
-import { to } from "react-spring";
+import img1 from "../image/1.png";
 const Section4 = () => {
   /* Store the element in el */
   const navigate = useNavigate();
@@ -196,11 +196,7 @@ const Section4 = () => {
                 <NorthEastIcon style={{ fontSize: "3rem" }} />
               </motion.div>
 
-              <img
-                id="tilt"
-                src="https://images.prismic.io/folio2022/145f4d1b-794d-442d-a66e-eb7406a8d505_Hero+4.png?auto=compress,format&rect=117,0,1207,1024&w=660&h=560"
-                alt=""
-              />
+              <img id="tilt" src={img1} alt="" />
             </motion.div>
           </div>
         </div>

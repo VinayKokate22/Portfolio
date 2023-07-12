@@ -1,9 +1,9 @@
 .ecommercepage .curtainrevel {
   width: 100%;
   height: 130vh;
-  background-color: rgb(255, 146, 22);
+  background-color: rgb(0, 0, 0);
   position: absolute;
-  top: -10rem;
+  top: -20rem;
 }
 .ecommercepage .ecommercetitle {
   margin-top: 2rem;
@@ -15,11 +15,51 @@
 .ecommercepage .mainimage {
   width: 90%;
   margin: 5rem auto;
-  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.221);
-  border-radius: 1rem;
 }
 .ecommercepage .mainimage img {
   width: 100%;
   height: 100%;
-  border-radius: 1rem;
+}
+.ecommercepage .techstackused {
+  width: 90%;
+  margin: 10rem auto;
+  padding-bottom: 5rem;
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+}
+.ecommercepage .techstackused .techstackinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.ecommercepage .techstackused .techstackinfo h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.ecommercepage .techstackused .techstackinfo .overview p {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+.ecommercepage .techstackused .techstackinfo .techstack ul {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+.ecommercepage .techstackused .techstackinfo .techstack ul li {
+  width: 50%;
+  font-size: 1.3rem;
+}
+.ecommercepage .techstackused .secondimage img {
+  width: 50rem;
+}
+.ecommercepage .imagerevelcoolanimation {
+  width: 85%;
+  margin: 5rem auto;
+  overflow: hidden;
+}
+.ecommercepage .imagerevelcoolanimation img {
+  width: 100%;
 }/*# sourceMappingURL=ecommerce.css.map */

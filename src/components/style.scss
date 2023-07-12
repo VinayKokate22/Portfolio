@@ -134,7 +134,7 @@
     }
     .imagerevelanimation {
       width: 38rem;
-      height: 27rem;
+      height: 28rem;
       background-color: #574b43;
 
       z-index: 9999;
@@ -159,15 +159,15 @@
 
     img {
       width: 38rem;
-      height: 27rem;
+      height: 28rem;
       object-fit: cover;
       -webkit-filter: sepia(60%);
-      filter: grayscale(0.9);
+      // filter: grayscale(0.9);
       -webkit-transition: 0.3s ease-in-out;
       transition: 0.6s ease-in-out;
 
       &:hover {
-        -webkit-filter: grayscale(0%);
+        -webkit-filter: sepia(0%);
         cursor: pointer;
       }
     }
