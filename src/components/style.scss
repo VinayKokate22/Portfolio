@@ -11,8 +11,8 @@
     font-weight: 600;
     font-size: 2rem;
     padding: 1.5rem 1.5rem;
-    // background-color: rgb(255, 249, 242);
-    // backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.288);
+    // backdrop-filter: blur(10px);
   }
 }
 
@@ -59,7 +59,7 @@
   }
 }
 .aboutcomponent {
-  margin: auto;
+  margin: 5rem;
   .aboutsection {
     .Marquee {
     }
@@ -70,14 +70,24 @@
       flex-direction: column;
       align-items: center;
     }
-    h2 {
-      font-size: 3rem;
-      // margin: 5rem 0;
+    .abouttitle {
+      display: flex;
+      h2 {
+        font-size: 3rem;
+        // margin: 5rem 0;
+      }
+      &:hover {
+        background-color: blue;
+      }
     }
+
     p {
-      width: 50%;
+      width: 60%;
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      text-align: left;
     }
   }
 }
@@ -87,8 +97,19 @@
 .featureworkstitle {
   text-align: center;
   padding: 5rem 0;
-  margin: auto;
-  font-size: 7rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .featuretitle {
+    display: flex;
+  }
+  .worktitle {
+    display: flex;
+  }
+  h2 {
+    font-size: 8rem;
+  }
 }
 .Workssection {
   width: 80%;
@@ -112,8 +133,8 @@
       font-size: 2rem;
     }
     .imagerevelanimation {
-      width: 35rem;
-      height: 25rem;
+      width: 38rem;
+      height: 27rem;
       background-color: #574b43;
 
       z-index: 9999;
@@ -137,8 +158,8 @@
     }
 
     img {
-      width: 35rem;
-      height: 25rem;
+      width: 38rem;
+      height: 27rem;
       object-fit: cover;
       -webkit-filter: sepia(60%);
       filter: grayscale(0.9);
@@ -154,5 +175,77 @@
   .reverse {
     justify-content: start;
     flex-direction: row-reverse;
+  }
+}
+
+//
+//
+//
+.contactsection {
+  margin: 10rem auto;
+  padding-bottom: 10rem;
+  width: 80%;
+  .link {
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+  }
+
+  /* Hide extra text */
+  .mask {
+    position: relative;
+    padding: 0;
+    height: 10rem;
+    /*  Remove overflow to see how it works　:) */
+    overflow: hidden;
+  }
+
+  .link-container {
+    transition: transform 0.4s ease;
+  }
+
+  .title {
+    display: block;
+
+    /*  Set same font-size and line height  */
+    font-size: 10rem;
+    line-height: 10rem;
+    font-weight: 700;
+    transition: transform 0.4s ease;
+  }
+
+  .link-title1 {
+    transform-origin: right center;
+  }
+
+  .link-title2 {
+    transform-origin: left center;
+    transform: rotate(20deg);
+  }
+
+  /* Hover Action*/
+
+  /* Move up two texts (20px = font-size) */
+  .link:hover .link-container {
+    transform: translateY(-10rem);
+  }
+
+  /* Rotate texts a little bit */
+  .link:hover .link-title1 {
+    transform: rotate(20deg);
+  }
+
+  .link:hover .link-title2 {
+    transform: rotate(0);
+  }
+
+  /* Move arrows to right */
+  .link:hover .icon:first-child {
+    transform: translate(20rem);
+  }
+
+  .link:hover .icon:nth-child(2) {
+    transform: translate(0px);
   }
 }

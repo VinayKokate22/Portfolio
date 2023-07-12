@@ -2,30 +2,14 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useEffect, useRef } from "react";
 import Marquee from "react-fast-marquee";
-gsap.registerPlugin(ScrollTrigger);
+import { motion } from "framer-motion";
+import { cubicBezier } from "framer-motion";
+
 const Section3 = () => {
-  gsap.registerPlugin(ScrollTrigger);
-  const abouttitle = useRef(null);
-
-  useEffect(() => {
-    gsap.fromTo(
-      abouttitle.current,
-      { scale: 0.1 },
-      {
-        scale: 1,
-        ease: "power3.inOut",
-
-        duration: 2,
-        // scrollTrigger: {
-        //   trigger: abouttitle.current,
-        // },
-      }
-    );
-  }, []);
   return (
     <div className=" aboutcomponent" data-scroll-section>
       <div className="aboutsection">
-        <Marquee
+        {/* <Marquee
           className="Marquee"
           speed={100}
           style={{
@@ -50,15 +34,88 @@ const Section3 = () => {
           }}
         >
           EXPRESSJS MONGODB GIT FRAMERMOTION .
-        </Marquee>
-        <div ref={abouttitle} className="infocomponent">
-          <p>
-            Hi, Josiah here. Obviously! I am a software engineer who constantly
-            seeks out innovative solutions to everyday problems. For whatever
-            reason it is you are here, welcome.
-          </p>
+        </Marquee> */}
+        <div className="infocomponent">
+          <motion.p
+            initial={{ y: +80, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              ease: cubicBezier(0.42, 0, 0.58, 1),
+            }}
+          >
+            Hi, Josiah here. Obviously!
+          </motion.p>
+          <motion.p
+            initial={{ y: +80, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ type: "spring", ease: cubicBezier(0.42, 0, 0.58, 1) }}
+          >
+            I am a software engineer who constantly seeks out innovative
+            solutions to everyday problems.
+          </motion.p>
+          <motion.p
+            initial={{ y: +80, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              ease: cubicBezier(0.42, 0, 0.58, 1),
+            }}
+          >
+            For whatever reason it is you are here, welcome.
+          </motion.p>
+          <div className="abouttitle">
+            <motion.h2
+              initial={{ y: 10 }}
+              whileInView={{ y: 0 }}
+              transition={{
+                ease: cubicBezier(0.42, 0, 0.58, 1),
+                duration: 0.5,
+              }}
+            >
+              a
+            </motion.h2>
+            <motion.h2
+              initial={{ y: 20 }}
+              whileInView={{ y: 0 }}
+              transition={{
+                ease: cubicBezier(0.42, 0, 0.58, 1),
+                duration: 0.5,
+              }}
+            >
+              b
+            </motion.h2>
+            <motion.h2
+              initial={{ y: 30 }}
+              whileInView={{ y: 0 }}
+              transition={{
+                duration: 0.5,
+                ease: cubicBezier(0.42, 0, 0.58, 1),
+              }}
+            >
+              o
+            </motion.h2>
+            <motion.h2
+              initial={{ y: 40 }}
+              whileInView={{ y: 0 }}
+              transition={{
+                duration: 0.5,
 
-          <h2 className="abouttitle">about</h2>
+                ease: cubicBezier(0.42, 0, 0.58, 1),
+              }}
+            >
+              u
+            </motion.h2>
+            <motion.h2
+              initial={{ y: 50 }}
+              whileInView={{ y: 0 }}
+              transition={{
+                duration: 0.5,
+
+                ease: cubicBezier(0.42, 0, 0.58, 1),
+              }}
+            >
+              t
+            </motion.h2>
+          </div>
         </div>
       </div>
     </div>

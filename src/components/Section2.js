@@ -50,18 +50,7 @@ const Section2 = () => {
           // transition={{ type: "keyframes", duration: 1.5 }}
           className="heroTitle"
         >
-          <h1
-            className="animate-title"
-            onMouseOver={() => {
-              setTitle(
-                Title === "Frontend Devloper"
-                  ? "Backend Devloper"
-                  : "Frontend Devloper"
-              );
-            }}
-          >
-            {Title}
-          </h1>
+          <h1 className="animate-title">{Title}</h1>
         </div>
         <span>
           Currently working <br />

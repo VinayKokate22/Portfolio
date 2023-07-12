@@ -10,6 +10,7 @@ import Section3 from "./components/Section3";
 import Section4 from "./components/Section4";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Section5 from "./components/Section5";
 function App() {
   const containerRef = useRef(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -66,6 +67,7 @@ function App() {
         <Section2 />
         <Section3 />
         <Section4 />
+        <Section5 />
       </div>
       ;
     </LocomotiveScrollProvider>

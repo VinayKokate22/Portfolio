@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .navbar {
   position: sticky;
   z-index: 999;
@@ -10,6 +11,7 @@
   font-weight: 600;
   font-size: 2rem;
   padding: 1.5rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.288);
 }
 
 .herosection {
@@ -51,7 +53,7 @@
 }
 
 .aboutcomponent {
-  margin: auto;
+  margin: 5rem;
 }
 .aboutcomponent .aboutsection .infocomponent {
   width: 80%;
@@ -60,20 +62,40 @@
   flex-direction: column;
   align-items: center;
 }
-.aboutcomponent .aboutsection h2 {
+.aboutcomponent .aboutsection .abouttitle {
+  display: flex;
+}
+.aboutcomponent .aboutsection .abouttitle h2 {
   font-size: 3rem;
 }
+.aboutcomponent .aboutsection .abouttitle:hover {
+  background-color: blue;
+}
 .aboutcomponent .aboutsection p {
-  width: 50%;
+  width: 60%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-align: left;
 }
 
 .featureworkstitle {
   text-align: center;
   padding: 5rem 0;
-  margin: auto;
-  font-size: 7rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featureworkstitle .featuretitle {
+  display: flex;
+}
+.featureworkstitle .worktitle {
+  display: flex;
+}
+.featureworkstitle h2 {
+  font-size: 8rem;
 }
 
 .Workssection {
@@ -98,8 +120,8 @@
   font-size: 2rem;
 }
 .Workssection .singleproject .imagerevelanimation {
-  width: 35rem;
-  height: 25rem;
+  width: 38rem;
+  height: 27rem;
   background-color: #574b43;
   z-index: 9999;
   position: absolute;
@@ -119,8 +141,8 @@
   justify-content: center;
 }
 .Workssection .singleproject img {
-  width: 35rem;
-  height: 25rem;
+  width: 38rem;
+  height: 27rem;
   -o-object-fit: cover;
      object-fit: cover;
   filter: grayscale(0.9);
@@ -133,4 +155,61 @@
 .Workssection .reverse {
   justify-content: start;
   flex-direction: row-reverse;
+}
+
+.contactsection {
+  margin: 10rem auto;
+  padding-bottom: 10rem;
+  width: 80%;
+  /* Hide extra text */
+  /* Hover Action*/
+  /* Move up two texts (20px = font-size) */
+  /* Rotate texts a little bit */
+  /* Move arrows to right */
+}
+.contactsection .link {
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+}
+.contactsection .mask {
+  position: relative;
+  padding: 0;
+  height: 10rem;
+  /*  Remove overflow to see how it works　:) */
+  overflow: hidden;
+}
+.contactsection .link-container {
+  transition: transform 0.4s ease;
+}
+.contactsection .title {
+  display: block;
+  /*  Set same font-size and line height  */
+  font-size: 10rem;
+  line-height: 10rem;
+  font-weight: 700;
+  transition: transform 0.4s ease;
+}
+.contactsection .link-title1 {
+  transform-origin: right center;
+}
+.contactsection .link-title2 {
+  transform-origin: left center;
+  transform: rotate(20deg);
+}
+.contactsection .link:hover .link-container {
+  transform: translateY(-10rem);
+}
+.contactsection .link:hover .link-title1 {
+  transform: rotate(20deg);
+}
+.contactsection .link:hover .link-title2 {
+  transform: rotate(0);
+}
+.contactsection .link:hover .icon:first-child {
+  transform: translate(20rem);
+}
+.contactsection .link:hover .icon:nth-child(2) {
+  transform: translate(0px);
 }/*# sourceMappingURL=style.css.map */
