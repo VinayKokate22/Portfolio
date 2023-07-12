@@ -43,15 +43,15 @@ const Section3 = () => {
               ease: cubicBezier(0.42, 0, 0.58, 1),
             }}
           >
-            Hi, Josiah here. Obviously!
+            Greetings, Vinay!
           </motion.p>
           <motion.p
             initial={{ y: +80, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "spring", ease: cubicBezier(0.42, 0, 0.58, 1) }}
           >
-            I am a software engineer who constantly seeks out innovative
-            solutions to everyday problems.
+            I'm a MERN stack web developer.I design and code beautifully simple
+            things, and I love what I do.
           </motion.p>
           <motion.p
             initial={{ y: +80, opacity: 0 }}
@@ -60,7 +60,7 @@ const Section3 = () => {
               ease: cubicBezier(0.42, 0, 0.58, 1),
             }}
           >
-            For whatever reason it is you are here, welcome.
+            Welcome to this space. I'm thrilled to have you here.
           </motion.p>
           <div className="abouttitle">
             <motion.h2

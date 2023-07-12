@@ -21,9 +21,9 @@ const IndividualProject = () => {
         </div>
       </div>
       <motion.div
-        initial={{ scale: 0.1 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 1 }}
+        initial={{ scale: 0.3 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         className="mainimage"
       >
         <img src={img1} alt="" />
@@ -132,9 +132,8 @@ const IndividualProject = () => {
           initial={{ x: 160, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{
-            type: "spring",
-            duration: 1,
-            ease: cubicBezier(0.42, 0, 0.58, 1),
+            duration: 0.5,
+            ease: "easeInOut",
           }}
           className="secondimage"
         >

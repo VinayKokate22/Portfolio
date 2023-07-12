@@ -1,7 +1,9 @@
 import { gsap } from "gsap";
 import React, { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Section1 = () => {
+  const navigate = useNavigate();
   const boxRef = useRef();
   useEffect(() => {
     // Refs allow you to access DOM nodes
@@ -26,9 +28,15 @@ const Section1 = () => {
     <div className="navbar" ref={boxRef}>
       <div>
         <ul className="nav-list">
-          <li>logo</li>
+          <li
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            Home
+          </li>
 
-          <li>menu</li>
+          <li>Work</li>
         </ul>
       </div>
     </div>

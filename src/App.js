@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 import Section5 from "./components/Section5";
 import Ecommerce from "./pages/singleproject/ecommerce";
 import Home from "./pages/homepage/Home";
+import Hemant from "./pages/singleproject/Hemant";
 function App() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -51,6 +52,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="works/ecommerce" element={<Ecommerce />} />
+        <Route path="works/Hemant" element={<Hemant />} />
         <Route path="contact" element={<Section5 />} />
         <Route path="*" element={<Section5 />} />
       </Routes>

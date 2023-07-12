@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 const Section2 = () => {
   const boxRef = useRef();
   const nameRef = useRef();
-  const [Title, setTitle] = useState("Frontend Devloper");
+  const [Title, setTitle] = useState("MernStack Devloper");
   useEffect(() => {
     gsap.fromTo(
       boxRef.current,
