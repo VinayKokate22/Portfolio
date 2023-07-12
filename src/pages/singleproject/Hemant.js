@@ -52,8 +52,8 @@ const Hemant = () => {
           </div>
           <motion.div
             initial={{ scale: 0.3 }}
-            whileInView={{ scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.8 }}
             className="mainimage"
           >
             <img src={img12} alt="" />

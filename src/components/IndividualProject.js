@@ -22,7 +22,7 @@ const IndividualProject = () => {
       </div>
       <motion.div
         initial={{ scale: 0.3 }}
-        whileInView={{ scale: 1 }}
+        animate={{ scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="mainimage"
       >

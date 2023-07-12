@@ -109,7 +109,7 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 11rem;
+  gap: 8rem;
 }
 .Workssection .singleproject {
   display: flex;
@@ -126,7 +126,7 @@
   font-size: 2rem;
 }
 .Workssection .singleproject .imagerevelanimation {
-  width: 38rem;
+  width: 40rem;
   height: 28rem;
   background-color: #574b43;
   z-index: 9999;
@@ -147,7 +147,7 @@
   justify-content: center;
 }
 .Workssection .singleproject img {
-  width: 38rem;
+  width: 40rem;
   height: 28rem;
   -o-object-fit: cover;
      object-fit: cover;
