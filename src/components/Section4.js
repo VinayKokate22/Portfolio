@@ -3,9 +3,11 @@ import { easeInOut, useWillChange } from "framer-motion";
 import { cubicBezier } from "framer-motion";
 import { motion } from "framer-motion";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
+import { useNavigate } from "react-router-dom";
+import { to } from "react-spring";
 const Section4 = () => {
   /* Store the element in el */
-
+  const navigate = useNavigate();
   return (
     <div data-scroll-section>
       <div className="featureworkstitle">
@@ -147,7 +149,12 @@ const Section4 = () => {
       </div>
       <div className="Workssection">
         <div className="singleproject">
-          <div className="singleprojectImage ">
+          <div
+            className="singleprojectImage "
+            onClick={() => {
+              navigate("/works/ecommerce");
+            }}
+          >
             <motion.b
               initial={{ scale: 0.1, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}

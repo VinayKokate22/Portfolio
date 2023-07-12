@@ -161,29 +161,29 @@
   margin: 10rem auto;
   padding-bottom: 10rem;
   width: 80%;
-  /* Hide extra text */
-  /* Hover Action*/
-  /* Move up two texts (20px = font-size) */
-  /* Rotate texts a little bit */
-  /* Move arrows to right */
 }
-.contactsection .link {
+
+.link {
   align-items: center;
   color: #000;
   text-decoration: none;
   display: flex;
 }
-.contactsection .mask {
+
+/* Hide extra text */
+.mask {
   position: relative;
   padding: 0;
   height: 10rem;
   /*  Remove overflow to see how it works　:) */
   overflow: hidden;
 }
-.contactsection .link-container {
+
+.link-container {
   transition: transform 0.4s ease;
 }
-.contactsection .title {
+
+.title {
   display: block;
   /*  Set same font-size and line height  */
   font-size: 10rem;
@@ -191,25 +191,36 @@
   font-weight: 700;
   transition: transform 0.4s ease;
 }
-.contactsection .link-title1 {
+
+.link-title1 {
   transform-origin: right center;
 }
-.contactsection .link-title2 {
+
+.link-title2 {
   transform-origin: left center;
   transform: rotate(20deg);
 }
-.contactsection .link:hover .link-container {
+
+/* Hover Action*/
+/* Move up two texts (20px = font-size) */
+.link:hover .link-container {
   transform: translateY(-10rem);
 }
-.contactsection .link:hover .link-title1 {
+
+/* Rotate texts a little bit */
+.link:hover .link-title1 {
   transform: rotate(20deg);
 }
-.contactsection .link:hover .link-title2 {
+
+.link:hover .link-title2 {
   transform: rotate(0);
 }
-.contactsection .link:hover .icon:first-child {
+
+/* Move arrows to right */
+.link:hover .icon:first-child {
   transform: translate(20rem);
 }
-.contactsection .link:hover .icon:nth-child(2) {
+
+.link:hover .icon:nth-child(2) {
   transform: translate(0px);
 }/*# sourceMappingURL=style.css.map */
