@@ -4,8 +4,10 @@ import React, { useEffect, useRef } from "react";
 import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
 import { cubicBezier } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Section3 = () => {
+  const navigate = useNavigate();
   return (
     <div className=" aboutcomponent" data-scroll-section>
       <div className="aboutsection">
@@ -62,7 +64,12 @@ const Section3 = () => {
           >
             Welcome to this space. I'm thrilled to have you here.
           </motion.p>
-          <div className="abouttitle">
+          <div
+            className="abouttitle"
+            onClick={() => {
+              navigate("/about");
+            }}
+          >
             <motion.h2
               initial={{ y: 10 }}
               whileInView={{ y: 0 }}

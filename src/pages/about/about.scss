@@ -1,0 +1,48 @@
+.aboutpage {
+  .maintitle {
+    margin-top: 5rem;
+    .link {
+      justify-content: center;
+    }
+    p {
+      margin-top: 2rem;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.386);
+      font-size: 1.5rem;
+    }
+  }
+  .myinfo {
+    width: 80%;
+    margin: auto;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    .myskills {
+      min-width: 20rem;
+      .singleskill {
+        margin-bottom: 2rem;
+        h3 {
+          font-size: 2rem;
+          margin-bottom: 2rem;
+          font-weight: 600;
+        }
+        p {
+          font-size: 1.3rem;
+          word-spacing: 1rem;
+          line-height: 2rem;
+        }
+        span {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    .aboutmesection {
+      p {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+    }
+  }
+}

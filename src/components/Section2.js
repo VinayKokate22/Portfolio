@@ -18,7 +18,7 @@ const Section2 = () => {
         stagger: {
           amount: 0.5,
         },
-        duration: 2,
+        duration: 1.5,
       }
     );
     gsap.fromTo(

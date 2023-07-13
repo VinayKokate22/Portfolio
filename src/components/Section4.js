@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
 import { useNavigate } from "react-router-dom";
 import img11 from "../image/11.png";
+import img21 from "../image/21.png";
 import img1 from "../image/1.png";
 const Section4 = () => {
   /* Store the element in el */
@@ -270,7 +271,7 @@ const Section4 = () => {
                 duration: 1,
               }}
             >
-              01/05
+              03/05
             </motion.b>
             <motion.div
               initial={{ scale: 0.4, opacity: 1 }}
@@ -302,8 +303,11 @@ const Section4 = () => {
                 <NorthEastIcon style={{ fontSize: "3rem" }} />
               </motion.div>
               <img
+                onClick={() => {
+                  navigate("/works/YoutubeClone");
+                }}
                 id="tilt"
-                src="https://images.prismic.io/folio2022/145f4d1b-794d-442d-a66e-eb7406a8d505_Hero+4.png?auto=compress,format&rect=117,0,1207,1024&w=660&h=560"
+                src={img21}
                 alt=""
               />
             </motion.div>

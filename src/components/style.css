@@ -69,13 +69,26 @@
   align-items: center;
 }
 .aboutcomponent .aboutsection .abouttitle {
+  width: -moz-fit-content;
+  width: fit-content;
   display: flex;
+}
+.aboutcomponent .aboutsection .abouttitle::after {
+  content: "";
+  width: 0;
+  background: black;
+  height: 0.2rem;
+  position: absolute;
+  bottom: 0rem;
+  transition: 0.3s;
+}
+.aboutcomponent .aboutsection .abouttitle:hover::after {
+  width: 9rem;
 }
 .aboutcomponent .aboutsection .abouttitle h2 {
   font-size: 3rem;
-}
-.aboutcomponent .aboutsection .abouttitle:hover {
-  background-color: blue;
+  cursor: pointer;
+  transition: 0.3s;
 }
 .aboutcomponent .aboutsection p {
   width: 60%;
