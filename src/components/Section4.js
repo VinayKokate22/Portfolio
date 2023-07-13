@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import img11 from "../image/11.png";
 import img21 from "../image/21.png";
 import img1 from "../image/1.png";
+import img41 from "../image/41.png";
 const Section4 = () => {
   /* Store the element in el */
   const navigate = useNavigate();
@@ -165,7 +166,7 @@ const Section4 = () => {
                 duration: 1,
               }}
             >
-              01/05
+              01/04
             </motion.b>
             <motion.div
               initial={{ scale: 0.4, opacity: 1 }}
@@ -213,7 +214,7 @@ const Section4 = () => {
                 duration: 1,
               }}
             >
-              02/05
+              02/04
             </motion.b>
             <motion.div
               initial={{ scale: 0.4, opacity: 1 }}
@@ -271,7 +272,7 @@ const Section4 = () => {
                 duration: 1,
               }}
             >
-              03/05
+              03/04
             </motion.b>
             <motion.div
               initial={{ scale: 0.4, opacity: 1 }}
@@ -314,7 +315,7 @@ const Section4 = () => {
           </div>
         </div>
         <div className="singleproject reverse">
-          <div className="singleprojectImage ">
+          <div className="singleprojectImage row-reverse">
             <motion.b
               initial={{ scale: 0.1, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
@@ -323,7 +324,7 @@ const Section4 = () => {
                 duration: 1,
               }}
             >
-              01/05
+              04/04
             </motion.b>
             <motion.div
               initial={{ scale: 0.4, opacity: 1 }}
@@ -357,8 +358,11 @@ const Section4 = () => {
               </motion.div>
 
               <img
+                onClick={() => {
+                  navigate("/works/Blog");
+                }}
                 id="tilt"
-                src="https://images.prismic.io/folio2022/145f4d1b-794d-442d-a66e-eb7406a8d505_Hero+4.png?auto=compress,format&rect=117,0,1207,1024&w=660&h=560"
+                src={img41}
                 alt=""
               />
             </motion.div>

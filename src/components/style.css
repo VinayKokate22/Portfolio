@@ -135,7 +135,7 @@
   position: relative;
   gap: 2rem;
 }
-.Workssection .singleproject b {
+.Workssection .singleproject .singleprojectImage b {
   font-size: 2rem;
 }
 .Workssection .singleproject .imagerevelanimation {
@@ -173,7 +173,6 @@
 }
 .Workssection .reverse {
   justify-content: start;
-  flex-direction: row-reverse;
 }
 
 .contactsection {

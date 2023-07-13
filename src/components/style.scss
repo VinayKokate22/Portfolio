@@ -149,10 +149,11 @@
       display: flex;
       position: relative;
       gap: 2rem;
+      b {
+        font-size: 2rem;
+      }
     }
-    b {
-      font-size: 2rem;
-    }
+
     .imagerevelanimation {
       width: 40rem;
       height: 28rem;
@@ -195,7 +196,6 @@
   }
   .reverse {
     justify-content: start;
-    flex-direction: row-reverse;
   }
 }
 
