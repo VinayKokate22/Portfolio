@@ -5,6 +5,11 @@ import Section1 from "../../components/Section1";
 import { motion } from "framer-motion";
 import "./work.css";
 import img1 from "../../image/1.png";
+import img2 from "../../image/11.png";
+import img3 from "../../image/21.png";
+import img4 from "../../image/41.png";
+import img5 from "../../image/51.png";
+import img6 from "../../image/61.png";
 const Works = () => {
   const containerRef = useRef(null);
   return (
@@ -19,7 +24,7 @@ const Works = () => {
         <motion.div
           initial={{ height: "150vh" }}
           animate={{ height: 0, borderRadius: "70%" }}
-          transition={{ duration: 1, ease: "easeInOut" }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
           className="curtainrevel"
         ></motion.div>
         <Section1 />
@@ -53,11 +58,11 @@ const Works = () => {
             </div>
             <div className="singlework">
               <div className="singleworktitle">
-                <h2>Ecommerce</h2>
+                <h2>Client Portfolio</h2>
               </div>
               <div className="singleworkmoreinfo">
                 <div className="singleworkimage">
-                  <img src={img1} alt="" />
+                  <img src={img2} alt="" />
                 </div>
                 <div>
                   <p>
@@ -69,11 +74,11 @@ const Works = () => {
             </div>
             <div className="singlework">
               <div className="singleworktitle">
-                <h2>Ecommerce</h2>
+                <h2>Youtube Clone</h2>
               </div>
               <div className="singleworkmoreinfo">
                 <div className="singleworkimage">
-                  <img src={img1} alt="" />
+                  <img src={img3} alt="" />
                 </div>
                 <div>
                   <p>
@@ -85,11 +90,11 @@ const Works = () => {
             </div>
             <div className="singlework">
               <div className="singleworktitle">
-                <h2>Ecommerce</h2>
+                <h2>Blog App</h2>
               </div>
               <div className="singleworkmoreinfo">
                 <div className="singleworkimage">
-                  <img src={img1} alt="" />
+                  <img src={img4} alt="" />
                 </div>
                 <div>
                   <p>
@@ -101,11 +106,11 @@ const Works = () => {
             </div>
             <div className="singlework">
               <div className="singleworktitle">
-                <h2>Ecommerce</h2>
+                <h2>Spotify Clone</h2>
               </div>
               <div className="singleworkmoreinfo">
                 <div className="singleworkimage">
-                  <img src={img1} alt="" />
+                  <img src={img5} alt="" />
                 </div>
                 <div>
                   <p>
@@ -117,11 +122,11 @@ const Works = () => {
             </div>
             <div className="singlework">
               <div className="singleworktitle">
-                <h2>Ecommerce</h2>
+                <h2>Parklik</h2>
               </div>
               <div className="singleworkmoreinfo">
                 <div className="singleworkimage">
-                  <img src={img1} alt="" />
+                  <img src={img6} alt="" />
                 </div>
                 <div>
                   <p>

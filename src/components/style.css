@@ -11,7 +11,7 @@
   font-weight: 600;
   font-size: 2rem;
   padding: 1.5rem 1.5rem;
-  background-color: rgba(255, 255, 255, 0.288);
+  background-color: rgba(255, 247, 239, 0.525);
 }
 .navbar .nav-list li {
   cursor: pointer;
@@ -19,7 +19,7 @@
 }
 .navbar .nav-list li:hover {
   font-size: 1.9rem;
-  color: rgb(81, 81, 81);
+  color: rgb(97, 97, 97);
 }
 
 .herosection {
@@ -75,18 +75,13 @@
   width: fit-content;
   display: flex;
   align-items: center;
+  border: 0.2rem solid transparent;
+  border-radius: 1rem;
+  padding: 0.2rem 4rem;
+  transition: 0.3s ease-in;
 }
-.aboutcomponent .aboutsection .abouttitle::after {
-  content: "";
-  width: 0;
-  background: black;
-  height: 0.2rem;
-  position: absolute;
-  bottom: 0rem;
-  transition: 0.3s;
-}
-.aboutcomponent .aboutsection .abouttitle:hover::after {
-  width: 9rem;
+.aboutcomponent .aboutsection .abouttitle:hover {
+  border: 0.2rem solid black;
 }
 .aboutcomponent .aboutsection .abouttitle h2 {
   font-size: 3rem;
@@ -114,6 +109,7 @@
   display: flex;
 }
 .featureworkstitle .worktitle {
+  margin-top: -2.5rem;
   display: flex;
 }
 .featureworkstitle h2 {
@@ -121,11 +117,11 @@
 }
 
 .Workssection {
-  width: 90%;
+  width: 85%;
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 8rem;
+  gap: 6rem;
 }
 .Workssection .singleproject {
   display: flex;
@@ -143,8 +139,8 @@
   font-size: 2rem;
 }
 .Workssection .singleproject .imagerevelanimation {
-  width: 40rem;
-  height: 28rem;
+  width: 37rem;
+  height: 26rem;
   background-color: #574b43;
   z-index: 9999;
   position: absolute;
@@ -168,8 +164,8 @@
   font-weight: 600;
 }
 .Workssection .singleproject img {
-  width: 40rem;
-  height: 28rem;
+  width: 37rem;
+  height: 26rem;
   -o-object-fit: cover;
      object-fit: cover;
   filter: sepia(70%) brightness(0.8) grayscale(0.5);
@@ -183,6 +179,9 @@
 }
 .Workssection .reverse {
   align-items: flex-start;
+}
+.Workssection .row-reverse {
+  flex-direction: row-reverse;
 }
 
 .contactsection {
@@ -210,11 +209,11 @@
   font-size: 2rem;
   font-weight: 700;
   text-decoration: line-through;
-  transition: 1s ease;
+  transition: 0.3s ease-in;
 }
 .contactsection .social-links ul a:hover {
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 .link {
@@ -228,7 +227,7 @@
 .mask {
   position: relative;
   padding: 0;
-  height: 10rem;
+  height: 8rem;
   /*  Remove overflow to see how it works　:) */
   overflow: hidden;
 }
@@ -240,8 +239,8 @@
 .title {
   display: block;
   /*  Set same font-size and line height  */
-  font-size: 10rem;
-  line-height: 10rem;
+  font-size: 8rem;
+  line-height: 8rem;
   font-weight: 700;
   transition: transform 0.4s ease;
 }
@@ -249,16 +248,24 @@
 .link-title1 {
   transform-origin: right center;
 }
+.link-title1 a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .link-title2 {
   transform-origin: left center;
   transform: rotate(20deg);
 }
+.link-title2 a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* Hover Action*/
 /* Move up two texts (20px = font-size) */
 .link:hover .link-container {
-  transform: translateY(-10rem);
+  transform: translateY(-8rem);
 }
 
 /* Rotate texts a little bit */
@@ -272,7 +279,7 @@
 
 /* Move arrows to right */
 .link:hover .icon:first-child {
-  transform: translate(20rem);
+  transform: translate(16rem);
 }
 
 .link:hover .icon:nth-child(2) {

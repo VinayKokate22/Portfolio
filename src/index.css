@@ -16,7 +16,14 @@
 }
 html {
   background-color: rgb(255, 249, 242);
+  /* background-color: rgb(16, 16, 16); */
+  /* color: #fcf3ea; */
+
+  /* background-color: rgb(255, 244, 232); */
 }
+/* a {
+  color: #fcf3ea !important;
+} */
 html.has-scroll-smooth {
   overflow: hidden;
 }

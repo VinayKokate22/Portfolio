@@ -11,14 +11,15 @@
     font-weight: 600;
     font-size: 2rem;
     padding: 1.5rem 1.5rem;
-    background-color: rgba(255, 255, 255, 0.288);
+    // background-color: rgba(31, 31, 31, 0.288);
+    background-color: rgba(255, 247, 239, 0.525);
     // backdrop-filter: blur(10px);
     li {
       cursor: pointer;
       transition: 0.2s ease-in;
       &:hover {
         font-size: 1.9rem;
-        color: rgb(81, 81, 81);
+        color: rgb(97, 97, 97);
       }
     }
   }
@@ -80,21 +81,28 @@
       width: fit-content;
       display: flex;
       align-items: center;
-      &::after {
-        content: "";
-        width: 0;
-        background: black;
-        height: 0.2rem;
-        position: absolute;
-        // left: 0;
-        bottom: 0rem;
-        transition: 0.3s;
+      border: 0.2rem solid transparent;
+      border-radius: 1rem;
+      padding: 0.2rem 4rem;
+      transition: 0.3s ease-in;
+      &:hover {
+        border: 0.2rem solid black;
       }
-      &:hover::after {
-        // scale: 0.8;
-        // color: rgb(255, 0, 106);
-        width: 9rem;
-      }
+      // &::after {
+      //   content: "";
+      //   width: 0;
+      //   background: black;
+      //   height: 0.2rem;
+      //   position: absolute;
+      //   // left: 0;
+      //   bottom: 0rem;
+      //   transition: 0.3s;
+      // }
+      // &:hover::after {
+      //   // scale: 0.8;
+      //   // color: rgb(255, 0, 106);
+      //   width: 12rem;
+      // }
 
       h2 {
         font-size: 3rem;
@@ -127,6 +135,7 @@
     display: flex;
   }
   .worktitle {
+    margin-top: -2.5rem;
     display: flex;
   }
   h2 {
@@ -134,11 +143,11 @@
   }
 }
 .Workssection {
-  width: 90%;
+  width: 85%;
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 8rem;
+  gap: 6rem;
 
   .singleproject {
     display: flex;
@@ -158,8 +167,8 @@
     }
 
     .imagerevelanimation {
-      width: 40rem;
-      height: 28rem;
+      width: 37rem;
+      height: 26rem;
       background-color: #574b43;
 
       z-index: 9999;
@@ -188,8 +197,8 @@
     }
 
     img {
-      width: 40rem;
-      height: 28rem;
+      width: 37rem;
+      height: 26rem;
       object-fit: cover;
       filter: sepia(70%) brightness(0.8) grayscale(0.5);
       -webkit-filter: sepia(70%) brightness(0.8) grayscale(0.5);
@@ -206,6 +215,9 @@
   }
   .reverse {
     align-items: flex-start;
+  }
+  .row-reverse {
+    flex-direction: row-reverse;
   }
 }
 
@@ -237,10 +249,10 @@
         font-size: 2rem;
         font-weight: 700;
         text-decoration: line-through;
-        transition: 1s ease;
+        transition: 0.3s ease-in;
         &:hover {
           text-decoration: none;
-          font-size: 2.5rem;
+          font-size: 2.2rem;
         }
       }
     }
@@ -257,7 +269,7 @@
 .mask {
   position: relative;
   padding: 0;
-  height: 10rem;
+  height: 8rem;
   /*  Remove overflow to see how it works　:) */
   overflow: hidden;
 }
@@ -270,26 +282,34 @@
   display: block;
 
   /*  Set same font-size and line height  */
-  font-size: 10rem;
-  line-height: 10rem;
+  font-size: 8rem;
+  line-height: 8rem;
   font-weight: 700;
   transition: transform 0.4s ease;
 }
 
 .link-title1 {
   transform-origin: right center;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .link-title2 {
   transform-origin: left center;
   transform: rotate(20deg);
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 /* Hover Action*/
 
 /* Move up two texts (20px = font-size) */
 .link:hover .link-container {
-  transform: translateY(-10rem);
+  transform: translateY(-8rem);
 }
 
 /* Rotate texts a little bit */
@@ -303,7 +323,7 @@
 
 /* Move arrows to right */
 .link:hover .icon:first-child {
-  transform: translate(20rem);
+  transform: translate(16rem);
 }
 
 .link:hover .icon:nth-child(2) {

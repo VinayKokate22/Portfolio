@@ -14,8 +14,12 @@ const Section5 = () => {
       <div class="link">
         <span class="mask">
           <div class="link-container">
-            <span class="link-title1 title">Let's Talk</span>
-            <span class="link-title2 title">Let's Talk</span>
+            <span class="link-title1 title">
+              <a href="mailto:someone@example.com">Let's Talk</a>
+            </span>
+            <span class="link-title2 title">
+              <a href="mailto:someone@example.com">Let's Talk</a>
+            </span>
           </div>
         </span>
       </div>

@@ -158,7 +158,7 @@ const Section4 = () => {
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{
               ease: cubicBezier(0.42, 0, 0.58, 1),
-              duration: 1,
+              duration: 0.8,
             }}
           >
             Ecommerce
@@ -180,7 +180,7 @@ const Section4 = () => {
               01/04
             </motion.b>
             <motion.div
-              initial={{ scale: 0.4, opacity: 1 }}
+              initial={{ scale: 0.6, opacity: 1 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{
                 ease: cubicBezier(0.42, 0, 0.58, 1),
@@ -199,7 +199,7 @@ const Section4 = () => {
                 }}
                 className="imagerevelanimation"
               ></motion.div>
-              <motion.div
+              {/* <motion.div
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 transition={{
@@ -209,7 +209,7 @@ const Section4 = () => {
                 className="redirectarroranimation"
               >
                 <NorthEastIcon style={{ fontSize: "3rem" }} />
-              </motion.div>
+              </motion.div> */}
 
               <img id="tilt" src={img1} alt="" />
             </motion.div>
@@ -222,12 +222,12 @@ const Section4 = () => {
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{
               ease: cubicBezier(0.42, 0, 0.58, 1),
-              duration: 1,
+              duration: 0.8,
             }}
           >
             Client Portfolio
           </motion.b>
-          <div className="singleprojectImage ">
+          <div className="singleprojectImage row-reverse ">
             <motion.b
               initial={{ scale: 0.1, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
@@ -240,7 +240,7 @@ const Section4 = () => {
             </motion.b>
 
             <motion.div
-              initial={{ scale: 0.4, opacity: 1 }}
+              initial={{ scale: 0.6, opacity: 1 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{
                 ease: cubicBezier(0.42, 0, 0.58, 1),
@@ -257,7 +257,7 @@ const Section4 = () => {
                 }}
                 className="imagerevelanimation"
               ></motion.div>
-              <motion.div
+              {/* <motion.div
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 transition={{
@@ -267,7 +267,7 @@ const Section4 = () => {
                 className="redirectarroranimation"
               >
                 <NorthEastIcon style={{ fontSize: "3rem" }} />
-              </motion.div>
+              </motion.div> */}
               <img
                 onClick={() => {
                   navigate("/works/Hemant");
@@ -291,7 +291,7 @@ const Section4 = () => {
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{
               ease: cubicBezier(0.42, 0, 0.58, 1),
-              duration: 1,
+              duration: 0.8,
             }}
           >
             Youtube Clone
@@ -309,7 +309,7 @@ const Section4 = () => {
               03/04
             </motion.b>
             <motion.div
-              initial={{ scale: 0.4, opacity: 1 }}
+              initial={{ scale: 0.6, opacity: 1 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{
                 ease: cubicBezier(0.42, 0, 0.58, 1),
@@ -326,7 +326,7 @@ const Section4 = () => {
                 }}
                 className="imagerevelanimation"
               ></motion.div>
-              <motion.div
+              {/* <motion.div
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1, rotate: 720 }}
                 transition={{
@@ -336,7 +336,7 @@ const Section4 = () => {
                 className="redirectarroranimation"
               >
                 <NorthEastIcon style={{ fontSize: "3rem" }} />
-              </motion.div>
+              </motion.div> */}
               <img
                 onClick={() => {
                   navigate("/works/YoutubeClone");
@@ -355,7 +355,7 @@ const Section4 = () => {
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{
               ease: cubicBezier(0.42, 0, 0.58, 1),
-              duration: 1,
+              duration: 0.8,
             }}
           >
             Blog App
@@ -372,7 +372,7 @@ const Section4 = () => {
               04/04
             </motion.b>
             <motion.div
-              initial={{ scale: 0.4, opacity: 1 }}
+              initial={{ scale: 0.6, opacity: 1 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{
                 ease: cubicBezier(0.42, 0, 0.58, 1),
@@ -390,7 +390,7 @@ const Section4 = () => {
                 }}
                 className="imagerevelanimation"
               ></motion.div>
-              <motion.div
+              {/* <motion.div
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1, rotate: 360 }}
                 transition={{
@@ -400,7 +400,7 @@ const Section4 = () => {
                 className="redirectarroranimation"
               >
                 <NorthEastIcon style={{ fontSize: "3rem" }} />
-              </motion.div>
+              </motion.div> */}
 
               <img
                 onClick={() => {
