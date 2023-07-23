@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import img21 from "../../image/41.png";
-import img2 from "../../image/42.png";
+import img2 from "../../image/44.png";
 
 import img3 from "../../image/43.png";
-import img4 from "../../image/44.png";
-import img5 from "../../image/45.png";
+import img4 from "../../image/45.png";
+import img5 from "../../image/42.png";
 // import img6 from "../../image/14.png";
 // import img7 from "../../image/17.png";
 import "./ecommerce.css";

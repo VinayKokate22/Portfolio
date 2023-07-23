@@ -5,6 +5,15 @@
   box-sizing: border-box;
   font-family: "Clash Display", sans-serif;
 }
+::-moz-selection {
+  /* Code for Firefox */
+
+  background: rgb(255, 158, 158);
+}
+
+::selection {
+  background: rgb(255, 158, 158);
+}
 html {
   background-color: rgb(255, 249, 242);
 }

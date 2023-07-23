@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
 import { cubicBezier } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-
+import SouthIcon from "@mui/icons-material/South";
 const Section3 = () => {
   const navigate = useNavigate();
   return (
@@ -64,6 +64,13 @@ const Section3 = () => {
           >
             Welcome to this space. I'm thrilled to have you here.
           </motion.p>
+          <motion.div
+            // initial={{ y: -10, opacity: 1 }}
+            animate={{ y: -10, y: 10, opacity: 1 }}
+            transition={{ ease: "easeInOut", duration: 1.5, repeat: Infinity }}
+          >
+            <SouthIcon style={{ fontSize: "3rem", fontWeight: "100" }} />
+          </motion.div>
           <div
             className="abouttitle"
             onClick={() => {
