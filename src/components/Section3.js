@@ -1,7 +1,4 @@
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useEffect, useRef } from "react";
-import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
 import { cubicBezier } from "framer-motion";
 import { useNavigate } from "react-router-dom";

@@ -1,0 +1,37 @@
+.workpage .workpagetitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.workpage .allworksection {
+  display: flex;
+  width: 80%;
+  margin: 5rem auto;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 5rem;
+}
+.workpage .allworksection .singlework {
+  padding: 1rem 2rem;
+  width: 35rem;
+  height: 30rem;
+  border-radius: 1rem;
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px);
+}
+.workpage .allworksection .singlework .singleworktitle {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.workpage .allworksection .singlework .singleworkmoreinfo {
+  width: 100%;
+}
+.workpage .allworksection .singlework .singleworkmoreinfo .singleworkimage {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.workpage .allworksection .singlework .singleworkmoreinfo .singleworkimage img {
+  width: 100%;
+}/*# sourceMappingURL=work.css.map */

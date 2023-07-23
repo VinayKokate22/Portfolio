@@ -1,0 +1,40 @@
+.workpage {
+  .workpagetitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .allworksection {
+    display: flex;
+    width: 80%;
+    margin: 5rem auto;
+
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+    .singlework {
+      padding: 1rem 2rem;
+      width: 35rem;
+      height: 30rem;
+      border-radius: 1rem;
+      backdrop-filter: blur(200px);
+
+      .singleworktitle {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      .singleworkmoreinfo {
+        width: 100%;
+        .singleworkimage {
+          width: 100%;
+          overflow: hidden;
+          margin-bottom: 1rem;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

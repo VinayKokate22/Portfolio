@@ -152,6 +152,17 @@ const Section4 = () => {
       </div>
       <div className="Workssection">
         <div className="singleproject">
+          <motion.b
+            style={{ fontSize: "4rem" }}
+            initial={{ scale: 0.1, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              ease: cubicBezier(0.42, 0, 0.58, 1),
+              duration: 1,
+            }}
+          >
+            Ecommerce
+          </motion.b>
           <div
             className="singleprojectImage "
             onClick={() => {
@@ -176,6 +187,7 @@ const Section4 = () => {
 
                 duration: 0.7,
               }}
+              className="wrapperforimage"
             >
               <motion.div
                 initial={{ width: "40rem" }}
@@ -189,7 +201,7 @@ const Section4 = () => {
               ></motion.div>
               <motion.div
                 initial={{ scale: 0 }}
-                whileInView={{ scale: 1, rotate: 360 }}
+                whileInView={{ scale: 1 }}
                 transition={{
                   duration: 1.6,
                   ease: cubicBezier(0.83, 0, 0.17, 1),
@@ -204,18 +216,29 @@ const Section4 = () => {
           </div>
         </div>
         <div className="singleproject reverse">
+          <motion.b
+            style={{ fontSize: "4rem" }}
+            initial={{ scale: 0.1, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              ease: cubicBezier(0.42, 0, 0.58, 1),
+              duration: 1,
+            }}
+          >
+            Client Portfolio
+          </motion.b>
           <div className="singleprojectImage ">
             <motion.b
               initial={{ scale: 0.1, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{
                 ease: cubicBezier(0.42, 0, 0.58, 1),
-
                 duration: 1,
               }}
             >
               02/04
             </motion.b>
+
             <motion.div
               initial={{ scale: 0.4, opacity: 1 }}
               whileInView={{ scale: 1, opacity: 1 }}
@@ -236,7 +259,7 @@ const Section4 = () => {
               ></motion.div>
               <motion.div
                 initial={{ scale: 0 }}
-                whileInView={{ scale: 1, rotate: 520 }}
+                whileInView={{ scale: 1 }}
                 transition={{
                   duration: 1.6,
                   ease: cubicBezier(0.83, 0, 0.17, 1),
@@ -262,6 +285,17 @@ const Section4 = () => {
         {/* 
         //  */}
         <div className="singleproject">
+          <motion.b
+            style={{ fontSize: "4rem" }}
+            initial={{ scale: 0.1, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              ease: cubicBezier(0.42, 0, 0.58, 1),
+              duration: 1,
+            }}
+          >
+            Youtube Clone
+          </motion.b>
           <div className="singleprojectImage ">
             <motion.b
               initial={{ scale: 0.1, opacity: 0 }}
@@ -315,6 +349,17 @@ const Section4 = () => {
           </div>
         </div>
         <div className="singleproject reverse">
+          <motion.b
+            style={{ fontSize: "4rem" }}
+            initial={{ scale: 0.1, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              ease: cubicBezier(0.42, 0, 0.58, 1),
+              duration: 1,
+            }}
+          >
+            Blog App
+          </motion.b>
           <div className="singleprojectImage row-reverse">
             <motion.b
               initial={{ scale: 0.1, opacity: 0 }}

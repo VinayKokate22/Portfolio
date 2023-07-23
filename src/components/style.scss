@@ -15,7 +15,9 @@
     // backdrop-filter: blur(10px);
     li {
       cursor: pointer;
+      transition: 0.2s ease-in;
       &:hover {
+        font-size: 1.9rem;
         color: rgb(81, 81, 81);
       }
     }
@@ -67,8 +69,6 @@
 .aboutcomponent {
   margin: 5rem;
   .aboutsection {
-    .Marquee {
-    }
     .infocomponent {
       width: 80%;
       margin: auto;
@@ -142,8 +142,9 @@
 
   .singleproject {
     display: flex;
-    justify-content: end;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
 
     gap: 1rem;
     .singleprojectImage {
@@ -167,18 +168,23 @@
     .redirectarroranimation {
       position: absolute;
       background: rgb(255, 255, 255);
-      width: 6rem;
+
       z-index: 9999;
+      width: 6rem;
       height: 6rem;
       border-radius: 50%;
       right: -2rem;
       bottom: 3rem;
-      box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.071);
+      box-shadow: 0 0 10px 10px rgba(96, 81, 74, 0.114);
 
       display: flex;
 
       align-items: center;
       justify-content: center;
+      p {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
     }
 
     img {
@@ -199,7 +205,7 @@
     }
   }
   .reverse {
-    justify-content: start;
+    align-items: flex-start;
   }
 }
 

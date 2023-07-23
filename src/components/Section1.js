@@ -36,7 +36,13 @@ const Section1 = () => {
             Home
           </li>
 
-          <li>Work</li>
+          <li
+            onClick={() => {
+              navigate("/Works");
+            }}
+          >
+            Works
+          </li>
         </ul>
       </div>
     </div>

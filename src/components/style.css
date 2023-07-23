@@ -15,8 +15,10 @@
 }
 .navbar .nav-list li {
   cursor: pointer;
+  transition: 0.2s ease-in;
 }
 .navbar .nav-list li:hover {
+  font-size: 1.9rem;
   color: rgb(81, 81, 81);
 }
 
@@ -127,8 +129,9 @@
 }
 .Workssection .singleproject {
   display: flex;
-  justify-content: end;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
   gap: 1rem;
 }
 .Workssection .singleproject .singleprojectImage {
@@ -149,16 +152,20 @@
 .Workssection .singleproject .redirectarroranimation {
   position: absolute;
   background: rgb(255, 255, 255);
-  width: 6rem;
   z-index: 9999;
+  width: 6rem;
   height: 6rem;
   border-radius: 50%;
   right: -2rem;
   bottom: 3rem;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.071);
+  box-shadow: 0 0 10px 10px rgba(96, 81, 74, 0.114);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.Workssection .singleproject .redirectarroranimation p {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .Workssection .singleproject img {
   width: 40rem;
@@ -175,7 +182,7 @@
   cursor: pointer;
 }
 .Workssection .reverse {
-  justify-content: start;
+  align-items: flex-start;
 }
 
 .contactsection {
