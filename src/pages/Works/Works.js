@@ -132,8 +132,8 @@ const Works = () => {
               </div>
             </div>
           </div>
-          <Section5 />
         </div>
+        <Section5 />
       </div>
     </LocomotiveScrollProvider>
   );
