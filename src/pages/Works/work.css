@@ -5,7 +5,7 @@
 }
 .workpage .allworksection {
   display: flex;
-  width: 80%;
+  width: 78%;
   margin: 5rem auto;
   align-items: center;
   justify-content: space-between;
@@ -17,8 +17,9 @@
   width: 35rem;
   height: 30rem;
   border-radius: 1rem;
-  -webkit-backdrop-filter: blur(200px);
-          backdrop-filter: blur(200px);
+  background-color: rgba(255, 255, 255, 0.445);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .workpage .allworksection .singlework .singleworktitle {
   text-align: center;

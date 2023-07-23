@@ -6,7 +6,7 @@
   }
   .allworksection {
     display: flex;
-    width: 80%;
+    width: 78%;
     margin: 5rem auto;
 
     align-items: center;
@@ -18,7 +18,8 @@
       width: 35rem;
       height: 30rem;
       border-radius: 1rem;
-      backdrop-filter: blur(200px);
+      background-color: rgba(255, 255, 255, 0.445);
+      backdrop-filter: blur(10px);
 
       .singleworktitle {
         text-align: center;

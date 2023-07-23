@@ -15,16 +15,19 @@ const Section5 = () => {
         <span class="mask">
           <div class="link-container">
             <span class="link-title1 title">
-              <a href="mailto:someone@example.com">Let's Talk</a>
+              <a href="mailto:vinaynkokate@gmail.com">Let's Talk</a>
             </span>
             <span class="link-title2 title">
-              <a href="mailto:someone@example.com">Let's Talk</a>
+              <a href="mailto:vinaynkokate@gmail.com">Let's Talk</a>
             </span>
           </div>
         </span>
       </div>
       <div className="social-links">
         <ul>
+          <li>
+            <a href="mailto:vinaynkokate@gmail.com">Contact Me Email</a>
+          </li>
           <li>
             <a
               href="https://www.linkedin.com/in/vinay-kokate-318250215/ "

@@ -75,13 +75,13 @@
   width: fit-content;
   display: flex;
   align-items: center;
-  border: 0.2rem solid transparent;
+  border: 0.15rem solid transparent;
   border-radius: 1rem;
   padding: 0.2rem 4rem;
   transition: 0.3s ease-in;
 }
 .aboutcomponent .aboutsection .abouttitle:hover {
-  border: 0.2rem solid black;
+  border: 0.15rem solid black;
 }
 .aboutcomponent .aboutsection .abouttitle h2 {
   font-size: 3rem;
@@ -95,6 +95,7 @@
   font-weight: 500;
   margin-bottom: 2rem;
   text-align: left;
+  line-height: 3rem;
 }
 
 .featureworkstitle {
@@ -177,6 +178,21 @@
   -webkit-filter: sepia(0%);
   cursor: pointer;
 }
+.Workssection .moreworktitle {
+  position: relative;
+}
+.Workssection .moreworktitle::after {
+  content: "";
+  width: 0;
+  background: black;
+  height: 0.2rem;
+  position: absolute;
+  bottom: 0rem;
+  transition: 0.3s;
+}
+.Workssection .moreworktitle:hover::after {
+  width: 16rem;
+}
 .Workssection .reverse {
   align-items: flex-start;
 }
@@ -200,20 +216,30 @@
 .contactsection .social-links ul {
   list-style: none;
   display: flex;
-  justify-content: end;
+  justify-content: start;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 .contactsection .social-links ul a {
   color: rgb(0, 0, 0);
   font-size: 2rem;
   font-weight: 700;
-  text-decoration: line-through;
-  transition: 0.3s ease-in;
-}
-.contactsection .social-links ul a:hover {
   text-decoration: none;
-  font-size: 2.2rem;
+  transition: 0.3s ease-in;
+  position: relative;
+}
+.contactsection .social-links ul a::after {
+  content: "";
+  width: 0;
+  background: black;
+  height: 0.2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0rem;
+  transition: 0.3s;
+}
+.contactsection .social-links ul a:hover::after {
+  width: 100%;
 }
 
 .link {

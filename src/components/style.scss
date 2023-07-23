@@ -81,12 +81,12 @@
       width: fit-content;
       display: flex;
       align-items: center;
-      border: 0.2rem solid transparent;
+      border: 0.15rem solid transparent;
       border-radius: 1rem;
       padding: 0.2rem 4rem;
       transition: 0.3s ease-in;
       &:hover {
-        border: 0.2rem solid black;
+        border: 0.15rem solid black;
       }
       // &::after {
       //   content: "";
@@ -118,6 +118,7 @@
       font-weight: 500;
       margin-bottom: 2rem;
       text-align: left;
+      line-height: 3rem;
     }
   }
 }
@@ -213,6 +214,26 @@
       }
     }
   }
+  .moreworktitle {
+    position: relative;
+
+    // width: fit-content;
+    &::after {
+      content: "";
+      width: 0;
+      background: black;
+      height: 0.2rem;
+      position: absolute;
+      // left: 0;
+      bottom: 0rem;
+      transition: 0.3s;
+    }
+    &:hover::after {
+      // scale: 0.8;
+      // color: rgb(255, 0, 106);
+      width: 16rem;
+    }
+  }
   .reverse {
     align-items: flex-start;
   }
@@ -240,19 +261,31 @@
     ul {
       list-style: none;
       display: flex;
-      justify-content: end;
+      justify-content: start;
       align-items: center;
 
-      gap: 2rem;
+      gap: 4rem;
       a {
         color: rgb(0, 0, 0);
         font-size: 2rem;
         font-weight: 700;
-        text-decoration: line-through;
+        text-decoration: none;
         transition: 0.3s ease-in;
-        &:hover {
-          text-decoration: none;
-          font-size: 2.2rem;
+        position: relative;
+        &::after {
+          content: "";
+          width: 0;
+          background: black;
+          height: 0.2rem;
+          position: absolute;
+          left: 0;
+          bottom: 0rem;
+          transition: 0.3s;
+        }
+        &:hover::after {
+          // scale: 0.8;
+          // color: rgb(255, 0, 106);
+          width: 100%;
         }
       }
     }

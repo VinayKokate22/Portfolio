@@ -66,7 +66,7 @@ const About = () => {
                   }}
                 >
                   HTML CSS3 SCSS FramerMotion GSAP StyledComponents Bootstrap
-                  TailwindCSS MaterialUI React
+                  TailwindCSS MaterialUI React Redux ReduxToolkit
                 </motion.p>
               </div>
               <div className="singleskill">
@@ -88,7 +88,7 @@ const About = () => {
                     ease: cubicBezier(0.42, 0, 0.58, 1),
                   }}
                 >
-                  MongoDB Node ExpressJS MySQL React
+                  MongoDB Node ExpressJS MySQL React Postman
                 </motion.p>
               </div>
               <div className="singleskill">

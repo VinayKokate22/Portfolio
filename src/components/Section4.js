@@ -153,7 +153,7 @@ const Section4 = () => {
       <div className="Workssection">
         <div className="singleproject">
           <motion.b
-            style={{ fontSize: "4rem" }}
+            style={{ fontSize: "3rem" }}
             initial={{ scale: 0.1, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{
@@ -217,7 +217,7 @@ const Section4 = () => {
         </div>
         <div className="singleproject reverse">
           <motion.b
-            style={{ fontSize: "4rem" }}
+            style={{ fontSize: "3rem" }}
             initial={{ scale: 0.1, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{
@@ -286,7 +286,7 @@ const Section4 = () => {
         //  */}
         <div className="singleproject">
           <motion.b
-            style={{ fontSize: "4rem" }}
+            style={{ fontSize: "3rem" }}
             initial={{ scale: 0.1, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{
@@ -350,7 +350,7 @@ const Section4 = () => {
         </div>
         <div className="singleproject reverse">
           <motion.b
-            style={{ fontSize: "4rem" }}
+            style={{ fontSize: "3rem" }}
             initial={{ scale: 0.1, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{
@@ -412,6 +412,102 @@ const Section4 = () => {
               />
             </motion.div>
           </div>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            fontSize: "2rem",
+            justifyContent: "center",
+            cursor: "pointer",
+          }}
+          className="moreworktitle"
+          onClick={() => {
+            navigate("/Works");
+          }}
+        >
+          <motion.h2
+            initial={{ y: 10 }}
+            whileInView={{ y: 0 }}
+            transition={{
+              ease: cubicBezier(0.42, 0, 0.58, 1),
+              duration: 0.5,
+            }}
+          >
+            v
+          </motion.h2>
+          <motion.h2
+            initial={{ y: 20 }}
+            whileInView={{ y: 0 }}
+            transition={{
+              ease: cubicBezier(0.42, 0, 0.58, 1),
+              duration: 0.5,
+            }}
+          >
+            i
+          </motion.h2>
+          <motion.h2
+            initial={{ y: 30 }}
+            whileInView={{ y: 0 }}
+            transition={{
+              duration: 0.5,
+              ease: cubicBezier(0.42, 0, 0.58, 1),
+            }}
+          >
+            e
+          </motion.h2>
+          <motion.h2
+            initial={{ y: 40 }}
+            whileInView={{ y: 0 }}
+            transition={{
+              duration: 0.5,
+
+              ease: cubicBezier(0.42, 0, 0.58, 1),
+            }}
+          >
+            w
+          </motion.h2>
+          {"___"}
+          <motion.h2
+            initial={{ y: 10 }}
+            whileInView={{ y: 0 }}
+            transition={{
+              ease: cubicBezier(0.42, 0, 0.58, 1),
+              duration: 0.5,
+            }}
+          >
+            m
+          </motion.h2>
+          <motion.h2
+            initial={{ y: 20 }}
+            whileInView={{ y: 0 }}
+            transition={{
+              ease: cubicBezier(0.42, 0, 0.58, 1),
+              duration: 0.5,
+            }}
+          >
+            o
+          </motion.h2>
+          <motion.h2
+            initial={{ y: 30 }}
+            whileInView={{ y: 0 }}
+            transition={{
+              duration: 0.5,
+              ease: cubicBezier(0.42, 0, 0.58, 1),
+            }}
+          >
+            r
+          </motion.h2>
+          <motion.h2
+            initial={{ y: 40 }}
+            whileInView={{ y: 0 }}
+            transition={{
+              duration: 0.5,
+
+              ease: cubicBezier(0.42, 0, 0.58, 1),
+            }}
+          >
+            e
+          </motion.h2>
         </div>
       </div>
     </div>
