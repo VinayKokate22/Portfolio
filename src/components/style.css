@@ -10,7 +10,7 @@
   text-transform: capitalize;
   font-weight: 600;
   font-size: 2rem;
-  padding: 1.5rem 1.5rem;
+  padng: 1rem 1.5rem;
   background-color: rgba(255, 247, 239, 0.525);
 }
 .navbar .nav-list li {
@@ -313,8 +313,67 @@
 }
 
 @media screen and (max-width: 580px) {
+  body,
   html {
     overflow-x: hidden;
-    font-size: 30%;
+  }
+  .navbar .nav-list {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+  }
+  .herosection {
+    width: 100%;
+    padding-top: 15rem;
+  }
+  .herosection p {
+    color: rgb(174, 28, 45);
+    left: 1rem;
+  }
+  .herosection span {
+    bottom: 3rem;
+    right: 2rem;
+  }
+  .herosection .heroTitle {
+    line-height: 4rem;
+  }
+  .herosection .heroTitle h1 {
+    font-size: 4rem;
+  }
+  .aboutcomponent {
+    margin: 10rem auto;
+  }
+  .aboutcomponent .aboutsection .infocomponent {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .aboutcomponent .aboutsection .abouttitle {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.2rem 1rem;
+  }
+  .aboutcomponent .aboutsection .abouttitle:hover {
+    background-color: rgb(25, 25, 25);
+    color: white;
+  }
+  .aboutcomponent .aboutsection .abouttitle h2 {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .aboutcomponent .aboutsection p {
+    width: 60%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: left;
+    line-height: normal;
   }
 }/*# sourceMappingURL=style.css.map */
