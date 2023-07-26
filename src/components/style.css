@@ -75,13 +75,13 @@
   width: fit-content;
   display: flex;
   align-items: center;
-  border: 0.15rem solid transparent;
+  border: 0.15rem solid black;
   border-radius: 1rem;
   padding: 0.2rem 4rem;
-  transition: 0.3s ease-in;
 }
 .aboutcomponent .aboutsection .abouttitle:hover {
-  border: 0.15rem solid black;
+  background-color: rgb(25, 25, 25);
+  color: white;
 }
 .aboutcomponent .aboutsection .abouttitle h2 {
   font-size: 3rem;
@@ -310,4 +310,11 @@
 
 .link:hover .icon:nth-child(2) {
   transform: translate(0px);
+}
+
+@media screen and (max-width: 580px) {
+  html {
+    overflow-x: hidden;
+    font-size: 30%;
+  }
 }/*# sourceMappingURL=style.css.map */

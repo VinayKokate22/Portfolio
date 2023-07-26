@@ -10,8 +10,10 @@ import img3 from "../../image/21.png";
 import img4 from "../../image/41.png";
 import img5 from "../../image/51.png";
 import img6 from "../../image/61.png";
+import { useNavigate } from "react-router-dom";
 const Works = () => {
   const containerRef = useRef(null);
+  const navigate = useNavigate();
   return (
     <LocomotiveScrollProvider
       options={{
@@ -49,10 +51,17 @@ const Works = () => {
                   <img src={img1} alt="" />
                 </div>
                 <div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Obcaecati commodi dolor sit eos eum tempore hic nemo, odio
-                  </p>
+                  <ul>
+                    <li>
+                      A fully functional e-commerce website with all essential
+                      function such as Sign in, Sign-up, Authentication, Admin
+                      Dashboard, Cart
+                    </li>
+                    <li>
+                      Tech-Stack : MongoDB, Express.js, React.js, Node.js, Redux
+                      Toolkit, Framer Motion, JWT, MaterialUI, SCSS, CSS
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -65,10 +74,14 @@ const Works = () => {
                   <img src={img2} alt="" />
                 </div>
                 <div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Obcaecati commodi dolor sit eos eum tempore hic nemo, odio
-                  </p>
+                  <ul>
+                    <li>
+                      I Made a Portfolio website for a 3D Graphic Designer It
+                      has dark and light mode it was done using Dom
+                    </li>
+                    <li>Tech Stack used :: Html, Css, Javascript</li>
+                    <b></b>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -81,10 +94,16 @@ const Works = () => {
                   <img src={img3} alt="" />
                 </div>
                 <div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Obcaecati commodi dolor sit eos eum tempore hic nemo, odio
-                  </p>
+                  <ul>
+                    <li>
+                      A Clone of Youtube with functionalities such as
+                      Subscribe,like, dislike, comment, Like/Dislike
+                    </li>
+                    <li>
+                      Tech-Stack Used: ,Nodejs ,Express js, MongoDB, Mongoose,
+                      React.js
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -97,10 +116,17 @@ const Works = () => {
                   <img src={img4} alt="" />
                 </div>
                 <div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Obcaecati commodi dolor sit eos eum tempore hic nemo, odio
-                  </p>
+                  <ul>
+                    <li>
+                      {" "}
+                      A Blog website which has various functionalities such as
+                      Search By Category, Authentication, Update/Delete Blog .
+                    </li>
+                    <li>
+                      Tech-Stack Used: Node js, Express.js, React, Context Api,
+                      MongoDB, CSS, JWT
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -113,10 +139,13 @@ const Works = () => {
                   <img src={img5} alt="" />
                 </div>
                 <div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Obcaecati commodi dolor sit eos eum tempore hic nemo, odio
-                  </p>
+                  <ul>
+                    <li>
+                      I have developed a Spotify clone using the official
+                      Spotify API.
+                    </li>
+                    <li>Tech-Stack Used: React, Spotify API, CSS</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -129,10 +158,13 @@ const Works = () => {
                   <img src={img6} alt="" />
                 </div>
                 <div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Obcaecati commodi dolor sit eos eum tempore hic nemo, odio
-                  </p>
+                  <ul>
+                    <li>A Car Parking Booking Website</li>
+                    <li>
+                      User can search for nearby parking area and make a booking
+                      for the required time period
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

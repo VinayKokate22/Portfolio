@@ -16,17 +16,24 @@
     .singlework {
       padding: 1rem 2rem;
       width: 35rem;
-      height: 30rem;
+      height: 40rem;
       border-radius: 1rem;
       background-color: rgba(255, 255, 255, 0.445);
+      // background-color: rgba(255, 228, 249, 0.445);
       backdrop-filter: blur(10px);
 
       .singleworktitle {
         text-align: center;
         margin-bottom: 1rem;
+        margin-top: 1rem;
       }
       .singleworkmoreinfo {
         width: 100%;
+        li {
+          font-size: 1.3rem;
+          margin-bottom: 1rem;
+          margin-left: 1rem;
+        }
         .singleworkimage {
           width: 100%;
           overflow: hidden;
@@ -40,6 +47,7 @@
             // filter: grayscale(0.9);
             -webkit-transition: 0.3s ease-in-out;
             transition: 0.3s ease-in-out;
+            margin-bottom: 1rem;
 
             &:hover {
               filter: sepia(0%);
