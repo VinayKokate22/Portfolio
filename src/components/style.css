@@ -376,4 +376,22 @@
     text-align: left;
     line-height: normal;
   }
+  .featureworkstitle {
+    text-align: center;
+    padding: 5rem 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .featureworkstitle .featuretitle {
+    display: flex;
+  }
+  .featureworkstitle .worktitle {
+    margin-top: -1rem;
+    display: flex;
+  }
+  .featureworkstitle h2 {
+    font-size: 4rem;
+  }
 }/*# sourceMappingURL=style.css.map */

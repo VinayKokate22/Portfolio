@@ -437,4 +437,22 @@
       }
     }
   }
+  .featureworkstitle {
+    text-align: center;
+    padding: 5rem 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .featuretitle {
+      display: flex;
+    }
+    .worktitle {
+      margin-top: -1rem;
+      display: flex;
+    }
+    h2 {
+      font-size: 4rem;
+    }
+  }
 }
