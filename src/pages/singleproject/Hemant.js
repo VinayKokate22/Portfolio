@@ -61,91 +61,24 @@ const Hemant = () => {
           <div className="techstackused">
             <div className="techstackinfo">
               <div className="overview">
-                <motion.h3
-                  initial={{ y: +80, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{
-                    type: "spring",
-                    ease: cubicBezier(0.42, 0, 0.58, 1),
-                  }}
-                >
-                  Overview
-                </motion.h3>
-                <motion.p
-                  initial={{ y: +80, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{
-                    type: "spring",
-                    ease: cubicBezier(0.42, 0, 0.58, 1),
-                  }}
-                >
+                <motion.h3>Overview</motion.h3>
+                <motion.p>
                   I Made a Portfolio website for a 3D Graphic Designer
                 </motion.p>
-                <motion.p
-                  initial={{ y: +80, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{
-                    type: "spring",
-                    ease: cubicBezier(0.42, 0, 0.58, 1),
-                  }}
-                >
+                <motion.p>
                   It has dark and light mode it was done using Dom
                 </motion.p>
               </div>
               <div className="techstack">
-                <motion.h3
-                  initial={{ y: +80, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{
-                    type: "spring",
-                    ease: cubicBezier(0.42, 0, 0.58, 1),
-                  }}
-                >
-                  Tech Stack used
-                </motion.h3>
+                <motion.h3>Tech Stack used</motion.h3>
                 <ul>
-                  <motion.li
-                    initial={{ y: +80, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{
-                      type: "spring",
-                      ease: cubicBezier(0.42, 0, 0.58, 1),
-                    }}
-                  >
-                    Html
-                  </motion.li>
-                  <motion.li
-                    initial={{ y: +80, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{
-                      type: "spring",
-                      ease: cubicBezier(0.42, 0, 0.58, 1),
-                    }}
-                  >
-                    Css
-                  </motion.li>
-                  <motion.li
-                    initial={{ y: +80, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{
-                      type: "spring",
-                      ease: cubicBezier(0.42, 0, 0.58, 1),
-                    }}
-                  >
-                    Javascript
-                  </motion.li>
+                  <motion.li>Html</motion.li>
+                  <motion.li>Css</motion.li>
+                  <motion.li>Javascript</motion.li>
                 </ul>
               </div>
             </div>
-            <motion.div
-              initial={{ x: 160, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{
-                duration: 0.5,
-                ease: "easeInOut",
-              }}
-              className="secondimage"
-            >
+            <motion.div className="secondimage">
               <img src={img2} alt="" />
             </motion.div>
           </div>
