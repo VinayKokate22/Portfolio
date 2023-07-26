@@ -68,7 +68,7 @@ const Section3 = () => {
               navigate("/about");
             }}
           >
-            <motion.div
+            {/* <motion.div
               initial={{ x: -40, opacity: 1 }}
               animate={{ x: -10, opacity: 1 }}
               transition={{
@@ -78,7 +78,7 @@ const Section3 = () => {
               }}
             >
               <EastIcon style={{ fontSize: "3rem", fontWeight: "100" }} />
-            </motion.div>
+            </motion.div> */}
             <motion.h2
               initial={{ y: 10 }}
               whileInView={{ y: 0 }}

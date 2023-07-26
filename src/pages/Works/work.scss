@@ -60,3 +60,70 @@
     }
   }
 }
+@media screen and (max-width: 580px) {
+  .workpage {
+    overflow-x: hidden;
+    .workpagetitle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+    .allworksection {
+      display: flex;
+      width: 90%;
+      margin: 3rem auto;
+
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 2rem;
+      .singlework {
+        padding: 0.5rem 1rem;
+        width: 100%;
+        height: fit-content;
+        border-radius: 0.5rem;
+        background-color: rgba(234, 225, 223, 0.445);
+        // background-color: rgba(255, 228, 249, 0.445);
+        backdrop-filter: blur(10px);
+
+        .singleworktitle {
+          text-align: center;
+          margin-bottom: 1rem;
+          margin-top: 1rem;
+        }
+        .singleworkmoreinfo {
+          width: 100%;
+          li {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            margin-left: 1rem;
+          }
+          .singleworkimage {
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 1rem;
+            img {
+              width: 100%;
+              height: 15rem;
+              object-fit: cover;
+              filter: sepia(0%) brightness(1) grayscale(0);
+              -webkit-filter: sepia(0%) brightness(1) grayscale(0);
+              // filter: grayscale(0.9);
+              -webkit-transition: 0.3s ease-in-out;
+              transition: 0.3s ease-in-out;
+              margin-bottom: 1rem;
+
+              &:hover {
+                filter: sepia(0%);
+                -webkit-filter: sepia(0%);
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -53,4 +53,69 @@
   filter: sepia(0%);
   -webkit-filter: sepia(0%);
   cursor: pointer;
+}
+
+@media screen and (max-width: 580px) {
+  .workpage {
+    overflow-x: hidden;
+  }
+  .workpage .workpagetitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  .workpage .allworksection {
+    display: flex;
+    width: 90%;
+    margin: 3rem auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+  }
+  .workpage .allworksection .singlework {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 0.5rem;
+    background-color: rgba(234, 225, 223, 0.445);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  .workpage .allworksection .singlework .singleworktitle {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .workpage .allworksection .singlework .singleworkmoreinfo {
+    width: 100%;
+  }
+  .workpage .allworksection .singlework .singleworkmoreinfo li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+  }
+  .workpage .allworksection .singlework .singleworkmoreinfo .singleworkimage {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  .workpage .allworksection .singlework .singleworkmoreinfo .singleworkimage img {
+    width: 100%;
+    height: 15rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: sepia(0%) brightness(1) grayscale(0);
+    -webkit-filter: sepia(0%) brightness(1) grayscale(0);
+    transition: 0.3s ease-in-out;
+    margin-bottom: 1rem;
+  }
+  .workpage .allworksection .singlework .singleworkmoreinfo .singleworkimage img:hover {
+    filter: sepia(0%);
+    -webkit-filter: sepia(0%);
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=work.css.map */
