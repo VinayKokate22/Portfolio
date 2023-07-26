@@ -41,4 +41,52 @@
   margin-bottom: 2rem;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+@media screen and (max-width: 580px) {
+  .aboutpage .maintitle {
+    margin-top: 5rem;
+  }
+  .aboutpage .maintitle .link {
+    justify-content: center;
+  }
+  .aboutpage .maintitle p {
+    margin-top: 1rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.386);
+    font-size: 1.5rem;
+  }
+  .aboutpage .myinfo {
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  .aboutpage .myinfo .myskills {
+    min-width: 20rem;
+  }
+  .aboutpage .myinfo .myskills .singleskill {
+    margin-bottom: 2rem;
+  }
+  .aboutpage .myinfo .myskills .singleskill h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  .aboutpage .myinfo .myskills .singleskill p {
+    font-size: 1rem;
+    word-spacing: 1rem;
+    line-height: 1.7rem;
+  }
+  .aboutpage .myinfo .myskills .singleskill span {
+    margin-bottom: 2rem;
+  }
+  .aboutpage .myinfo .aboutmesection p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
 }/*# sourceMappingURL=about.css.map */
