@@ -80,3 +80,28 @@
 .line:nth-child(9) {
   left: 90%;
 }
+@media screen and (max-width: 580px) {
+  .cursor {
+    width: 15rem;
+    height: 10rem;
+    pointer-events: none;
+
+    /* left: 50%;
+    top: 50%; */
+    /* z-index: 1; */
+    translate: -50% -50%;
+
+    background: linear-gradient(to left, rgb(255, 0, 123), rgb(255, 125, 64));
+    animation: rotate 10s infinite;
+    filter: blur(110px);
+  }
+  .line {
+    height: 100vh;
+    width: 0.9px;
+    /* background: linear-gradient(to bottom, #4c4c4c91, #ffffff); */
+    background: linear-gradient(to bottom, #8d8d8d6b, transparent);
+    position: absolute;
+    top: 0;
+    z-index: -111;
+  }
+}
