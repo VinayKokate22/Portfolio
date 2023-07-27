@@ -82,8 +82,8 @@
 }
 @media screen and (max-width: 580px) {
   .cursor {
-    width: 15rem;
-    height: 10rem;
+    width: 0rem;
+    height: 0rem;
     pointer-events: none;
 
     /* left: 50%;
