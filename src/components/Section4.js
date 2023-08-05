@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-
+import Tilt from "react-parallax-tilt";
 import { cubicBezier } from "framer-motion";
 import { motion } from "framer-motion";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
@@ -179,27 +179,28 @@ const Section4 = () => {
             >
               01/04
             </motion.b>
-            <motion.div
-              initial={{ scale: 0.6, opacity: 1 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{
-                ease: cubicBezier(0.42, 0, 0.58, 1),
-
-                duration: 0.7,
-              }}
-              className="wrapperforimage"
-            >
+            <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10}>
               <motion.div
-                initial={{ width: "40rem" }}
-                whileInView={{ width: 0 }}
+                initial={{ scale: 0.6, opacity: 1 }}
+                whileInView={{ scale: 1, opacity: 1 }}
                 transition={{
-                  duration: 1,
+                  ease: cubicBezier(0.42, 0, 0.58, 1),
 
-                  ease: cubicBezier(0.83, 0, 0.17, 1),
+                  duration: 0.7,
                 }}
-                className="imagerevelanimation"
-              ></motion.div>
-              {/* <motion.div
+                className="wrapperforimage"
+              >
+                <motion.div
+                  initial={{ width: "40rem" }}
+                  whileInView={{ width: 0 }}
+                  transition={{
+                    duration: 1,
+
+                    ease: cubicBezier(0.83, 0, 0.17, 1),
+                  }}
+                  className="imagerevelanimation"
+                ></motion.div>
+                {/* <motion.div
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 transition={{
@@ -211,8 +212,9 @@ const Section4 = () => {
                 <NorthEastIcon style={{ fontSize: "3rem" }} />
               </motion.div> */}
 
-              <img id="tilt" src={img1} alt="" />
-            </motion.div>
+                <img id="tilt" src={img1} alt="" />
+              </motion.div>
+            </Tilt>
           </div>
         </div>
         <div className="singleproject reverse">
@@ -238,26 +240,26 @@ const Section4 = () => {
             >
               02/04
             </motion.b>
-
-            <motion.div
-              initial={{ scale: 0.6, opacity: 1 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{
-                ease: cubicBezier(0.42, 0, 0.58, 1),
-
-                duration: 0.7,
-              }}
-            >
+            <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10}>
               <motion.div
-                initial={{ width: "35rem" }}
-                whileInView={{ width: 0 }}
+                initial={{ scale: 0.6, opacity: 1 }}
+                whileInView={{ scale: 1, opacity: 1 }}
                 transition={{
-                  duration: 1,
-                  ease: cubicBezier(0.83, 0, 0.17, 1),
+                  ease: cubicBezier(0.42, 0, 0.58, 1),
+
+                  duration: 0.7,
                 }}
-                className="imagerevelanimation"
-              ></motion.div>
-              {/* <motion.div
+              >
+                <motion.div
+                  initial={{ width: "35rem" }}
+                  whileInView={{ width: 0 }}
+                  transition={{
+                    duration: 1,
+                    ease: cubicBezier(0.83, 0, 0.17, 1),
+                  }}
+                  className="imagerevelanimation"
+                ></motion.div>
+                {/* <motion.div
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 transition={{
@@ -268,14 +270,15 @@ const Section4 = () => {
               >
                 <NorthEastIcon style={{ fontSize: "3rem" }} />
               </motion.div> */}
-              <img
-                onClick={() => {
-                  navigate("/works/Hemant");
-                }}
-                id="tilt"
-                src={img11}
-              />
-            </motion.div>
+                <img
+                  onClick={() => {
+                    navigate("/works/Hemant");
+                  }}
+                  id="tilt"
+                  src={img11}
+                />
+              </motion.div>
+            </Tilt>
           </div>
         </div>
 
@@ -308,25 +311,26 @@ const Section4 = () => {
             >
               03/04
             </motion.b>
-            <motion.div
-              initial={{ scale: 0.6, opacity: 1 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{
-                ease: cubicBezier(0.42, 0, 0.58, 1),
-
-                duration: 0.7,
-              }}
-            >
+            <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10}>
               <motion.div
-                initial={{ width: "35rem" }}
-                whileInView={{ width: 0 }}
+                initial={{ scale: 0.6, opacity: 1 }}
+                whileInView={{ scale: 1, opacity: 1 }}
                 transition={{
-                  duration: 1,
-                  ease: cubicBezier(0.83, 0, 0.17, 1),
+                  ease: cubicBezier(0.42, 0, 0.58, 1),
+
+                  duration: 0.7,
                 }}
-                className="imagerevelanimation"
-              ></motion.div>
-              {/* <motion.div
+              >
+                <motion.div
+                  initial={{ width: "35rem" }}
+                  whileInView={{ width: 0 }}
+                  transition={{
+                    duration: 1,
+                    ease: cubicBezier(0.83, 0, 0.17, 1),
+                  }}
+                  className="imagerevelanimation"
+                ></motion.div>
+                {/* <motion.div
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1, rotate: 720 }}
                 transition={{
@@ -337,15 +341,16 @@ const Section4 = () => {
               >
                 <NorthEastIcon style={{ fontSize: "3rem" }} />
               </motion.div> */}
-              <img
-                onClick={() => {
-                  navigate("/works/YoutubeClone");
-                }}
-                id="tilt"
-                src={img21}
-                alt=""
-              />
-            </motion.div>
+                <img
+                  onClick={() => {
+                    navigate("/works/YoutubeClone");
+                  }}
+                  id="tilt"
+                  src={img21}
+                  alt=""
+                />
+              </motion.div>
+            </Tilt>
           </div>
         </div>
         <div className="singleproject reverse">
@@ -371,26 +376,27 @@ const Section4 = () => {
             >
               04/04
             </motion.b>
-            <motion.div
-              initial={{ scale: 0.6, opacity: 1 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{
-                ease: cubicBezier(0.42, 0, 0.58, 1),
-
-                duration: 0.7,
-              }}
-            >
+            <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10}>
               <motion.div
-                initial={{ width: "40rem" }}
-                whileInView={{ width: 0 }}
+                initial={{ scale: 0.6, opacity: 1 }}
+                whileInView={{ scale: 1, opacity: 1 }}
                 transition={{
-                  duration: 1,
+                  ease: cubicBezier(0.42, 0, 0.58, 1),
 
-                  ease: cubicBezier(0.83, 0, 0.17, 1),
+                  duration: 0.7,
                 }}
-                className="imagerevelanimation"
-              ></motion.div>
-              {/* <motion.div
+              >
+                <motion.div
+                  initial={{ width: "40rem" }}
+                  whileInView={{ width: 0 }}
+                  transition={{
+                    duration: 1,
+
+                    ease: cubicBezier(0.83, 0, 0.17, 1),
+                  }}
+                  className="imagerevelanimation"
+                ></motion.div>
+                {/* <motion.div
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1, rotate: 360 }}
                 transition={{
@@ -402,15 +408,16 @@ const Section4 = () => {
                 <NorthEastIcon style={{ fontSize: "3rem" }} />
               </motion.div> */}
 
-              <img
-                onClick={() => {
-                  navigate("/works/Blog");
-                }}
-                id="tilt"
-                src={img41}
-                alt=""
-              />
-            </motion.div>
+                <img
+                  onClick={() => {
+                    navigate("/works/Blog");
+                  }}
+                  id="tilt"
+                  src={img41}
+                  alt=""
+                />
+              </motion.div>
+            </Tilt>
           </div>
         </div>
         <div
