@@ -87,13 +87,7 @@ const Blog = () => {
             transition={{ duration: 1, ease: "easeOut" }}
             className="imagerevelcoolanimation"
           >
-            <motion.img
-              initial={{ scale: 2 }}
-              whileInView={{ scale: 1 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              src={img3}
-              alt=""
-            />
+            <motion.img src={img3} alt="" />
           </motion.div>
 
           <motion.div
@@ -102,13 +96,7 @@ const Blog = () => {
             transition={{ duration: 1, ease: "easeOut" }}
             className="imagerevelcoolanimation"
           >
-            <motion.img
-              initial={{ scale: 2 }}
-              whileInView={{ scale: 1 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              src={img4}
-              alt=""
-            />
+            <motion.img src={img4} alt="" />
           </motion.div>
           <motion.div
             initial={{ scale: 0.6 }}
@@ -116,13 +104,7 @@ const Blog = () => {
             transition={{ duration: 1, ease: "easeOut" }}
             className="imagerevelcoolanimation"
           >
-            <motion.img
-              initial={{ scale: 2 }}
-              whileInView={{ scale: 1 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              src={img5}
-              alt=""
-            />
+            <motion.img src={img5} alt="" />
           </motion.div>
 
           {/* <motion.div
@@ -132,9 +114,7 @@ const Blog = () => {
             className="imagerevelcoolanimation"
           >
             <motion.img
-              initial={{ scale: 2 }}
-              whileInView={{ scale: 1 }}
-              transition={{ duration: 1, ease: "easeOut" }}
+              
               src={img6}
               alt=""
             />
@@ -146,9 +126,7 @@ const Blog = () => {
             className="imagerevelcoolanimation"
           >
             <motion.img
-              initial={{ scale: 2 }}
-              whileInView={{ scale: 1 }}
-              transition={{ duration: 1, ease: "easeOut" }}
+              
               src={img7}
               alt=""
             />

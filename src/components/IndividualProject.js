@@ -61,13 +61,7 @@ const IndividualProject = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="imagerevelcoolanimation"
       >
-        <motion.img
-          initial={{ scale: 2 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          src={img3}
-          alt=""
-        />
+        <motion.img src={img3} alt="" />
       </motion.div>
       <motion.div
         initial={{ scale: 0.6 }}
@@ -75,13 +69,7 @@ const IndividualProject = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="imagerevelcoolanimation"
       >
-        <motion.img
-          initial={{ scale: 2 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          src={img4}
-          alt=""
-        />
+        <motion.img src={img4} alt="" />
       </motion.div>
       <motion.div
         initial={{ scale: 0.6 }}
@@ -89,13 +77,7 @@ const IndividualProject = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="imagerevelcoolanimation"
       >
-        <motion.img
-          initial={{ scale: 2 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          src={img5}
-          alt=""
-        />
+        <motion.img src={img5} alt="" />
       </motion.div>
       <motion.div
         initial={{ scale: 0.6 }}
@@ -103,13 +85,7 @@ const IndividualProject = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="imagerevelcoolanimation"
       >
-        <motion.img
-          initial={{ scale: 2 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          src={img6}
-          alt=""
-        />
+        <motion.img src={img6} alt="" />
       </motion.div>
       <motion.div
         initial={{ scale: 0.6 }}
@@ -117,13 +93,7 @@ const IndividualProject = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="imagerevelcoolanimation"
       >
-        <motion.img
-          initial={{ scale: 2 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          src={img7}
-          alt=""
-        />
+        <motion.img src={img7} alt="" />
       </motion.div>
     </div>
   );
