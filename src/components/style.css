@@ -11,7 +11,7 @@
   font-weight: 600;
   font-size: 2rem;
   padding: 1.5rem 1.5rem;
-  background-color: rgba(255, 247, 239, 0.525);
+  background-color: rgba(43, 43, 43, 0.525);
 }
 .navbar .nav-list li {
   cursor: pointer;
@@ -75,16 +75,16 @@
   width: fit-content;
   display: flex;
   align-items: center;
-  border: 0.15rem solid black;
+  border: 0.15rem solid #dbd0c4;
   border-radius: 1rem;
   padding: 0.2rem 4rem;
 }
 .aboutcomponent .aboutsection .abouttitle:hover {
-  background-color: rgb(25, 25, 25);
-  color: white;
+  background-color: #dbd0c45c;
+  color: black;
 }
 .aboutcomponent .aboutsection .abouttitle h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -92,7 +92,7 @@
   width: 60%;
   text-align: center;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 2rem;
   text-align: left;
   line-height: 3rem;
@@ -168,7 +168,7 @@
   width: 39rem;
   height: 28rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   filter: sepia(70%) brightness(0.8) grayscale(0.5);
   -webkit-filter: sepia(70%) brightness(0.8) grayscale(0.5);
   transition: 0.6s ease-in-out;
@@ -184,7 +184,7 @@
 .Workssection .moreworktitle::after {
   content: "";
   width: 0;
-  background: black;
+  background: #dbd0c4;
   height: 0.2rem;
   position: absolute;
   bottom: 0rem;
@@ -221,9 +221,9 @@
   gap: 4rem;
 }
 .contactsection .social-links ul a {
-  color: rgb(0, 0, 0);
+  color: #dbd0c4;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   transition: 0.3s ease-in;
   position: relative;
@@ -231,7 +231,7 @@
 .contactsection .social-links ul a::after {
   content: "";
   width: 0;
-  background: black;
+  background: #dbd0c4;
   height: 0.2rem;
   position: absolute;
   left: 0;
@@ -244,7 +244,7 @@
 
 .link {
   align-items: center;
-  color: #000;
+  color: #dbd0c4;
   text-decoration: none;
   display: flex;
 }
@@ -449,7 +449,7 @@
     width: 100%;
     height: 15rem;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     filter: sepia(0%) brightness(1) grayscale(0);
     -webkit-filter: sepia(0%) brightness(1) grayscale(0);
     transition: 0.6s ease-in-out;
@@ -562,4 +562,4 @@
   .link:hover .icon:nth-child(2) {
     transform: translate(0px);
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

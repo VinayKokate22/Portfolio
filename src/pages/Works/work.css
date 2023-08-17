@@ -17,9 +17,9 @@
   width: 35rem;
   height: 40rem;
   border-radius: 1rem;
-  background-color: rgba(255, 255, 255, 0.445);
+  background-color: rgba(91, 91, 91, 0.148);
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 .workpage .allworksection .singlework .singleworktitle {
   text-align: center;
@@ -43,13 +43,18 @@
   width: 100%;
   height: 20rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   filter: sepia(70%) brightness(0.8) grayscale(0.5);
   -webkit-filter: sepia(70%) brightness(0.8) grayscale(0.5);
   transition: 0.3s ease-in-out;
   margin-bottom: 1rem;
 }
-.workpage .allworksection .singlework .singleworkmoreinfo .singleworkimage img:hover {
+.workpage
+  .allworksection
+  .singlework
+  .singleworkmoreinfo
+  .singleworkimage
+  img:hover {
   filter: sepia(0%);
   -webkit-filter: sepia(0%);
   cursor: pointer;
@@ -83,7 +88,7 @@
     border-radius: 0.5rem;
     background-color: rgba(234, 225, 223, 0.445);
     -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
   .workpage .allworksection .singlework .singleworktitle {
     text-align: center;
@@ -103,19 +108,29 @@
     overflow: hidden;
     margin-bottom: 1rem;
   }
-  .workpage .allworksection .singlework .singleworkmoreinfo .singleworkimage img {
+  .workpage
+    .allworksection
+    .singlework
+    .singleworkmoreinfo
+    .singleworkimage
+    img {
     width: 100%;
     height: 15rem;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     filter: sepia(0%) brightness(1) grayscale(0);
     -webkit-filter: sepia(0%) brightness(1) grayscale(0);
     transition: 0.3s ease-in-out;
     margin-bottom: 1rem;
   }
-  .workpage .allworksection .singlework .singleworkmoreinfo .singleworkimage img:hover {
+  .workpage
+    .allworksection
+    .singlework
+    .singleworkmoreinfo
+    .singleworkimage
+    img:hover {
     filter: sepia(0%);
     -webkit-filter: sepia(0%);
     cursor: pointer;
   }
-}/*# sourceMappingURL=work.css.map */
+} /*# sourceMappingURL=work.css.map */

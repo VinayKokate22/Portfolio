@@ -8,16 +8,16 @@
 ::-moz-selection {
   /* Code for Firefox */
 
-  background: rgb(255, 158, 158);
+  background: rgb(211, 170, 170);
 }
 
 ::selection {
-  background: rgb(255, 158, 158);
+  background: rgba(108, 99, 99, 0.621);
 }
 html {
-  background-color: rgb(255, 249, 242);
-  /* background-color: rgb(16, 16, 16); */
-  /* color: #fcf3ea; */
+  /* background-color: rgb(255, 249, 242); */
+  background-color: rgb(16, 16, 16);
+  color: #dbd0c4;
 
   /* background-color: rgb(255, 244, 232); */
 }
